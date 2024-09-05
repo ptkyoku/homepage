@@ -112,6 +112,7 @@ div.container ul.item {
   margin: 0 auto;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
 }
 
 div.container ul.item  li.list {
@@ -284,7 +285,7 @@ table.table01 tbody tr {
     width: auto;
     height: auto;
     background-color: #f1f0f0;
-  }
+    }
 }
 
 footer.footer01 {
