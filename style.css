@@ -8,6 +8,7 @@
 }
 
 body {
+  background-color: #f7f7f7;
   font-family: "Noto Sans", sans-serif;
   overflow-x: hidden;
 }
@@ -21,6 +22,13 @@ a {
   background: transparent;
   text-decoration: none;
   color: inherit;
+}
+
+
+.title01{
+  font-weight: bold;
+  border-bottom: 5px solid black;
+  border-radius: 5px;
 }
 
 header.header09 {
@@ -40,8 +48,8 @@ div.logo img {
 }
 
 nav.nav {
-  border-top: 1px solid #000;
-  padding-top: 1rem;
+  border-bottom: 1px solid #000;
+  padding-bottom: 1rem;
   margin: 1rem auto 0;
   max-width: 700px;
 }
@@ -64,15 +72,109 @@ nav.nav ul.item li.list a {
   display: none;
 }
 
-div.home{
-     margin: 4rem 10rem 1rem;
+div.plugins{
+    border-left: 8px solid #3656a7;
+    background-color: #f1f0f0;
+    margin: 1rem auto;
+    width: 50%;
 }
-p.home{
-    text-align: center;
+h1.plugins{
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
 }
 
-/* SPここから */
-@media (max-width: 768px) {
+div.box-home{
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    width: 830px;
+    background-color: #f1f0f0;
+    padding: 1rem 1rem;
+    font-size: 0.8rem;
+}
+
+div.box-about{
+    margin: 1.5rem auto;
+    border-radius: 10px;
+    width: 830px;
+    background-color: #f1f0f0;
+    padding: 1rem 1rem;
+}
+
+div.container {
+  width: 100%;
+  padding: 1rem 1rem;
+}
+
+div.container ul.item {
+  list-style: none;
+  max-width: 960px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+div.container ul.item  li.list {
+  min-height: 300px;
+  background: #fff;
+  padding: 1.5rem 1rem;
+}
+
+div.image {
+  width: 100%;
+  height: 154px;
+}
+
+div.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+p.content {
+  line-height: 1.6;
+  color: #333;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #9a9696;
+}
+
+h3.title {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+div.container ul.item li.list a {
+  display: block;
+  transition: 0.2s;
+}
+
+div.container ul.item li.list a:hover {
+  opacity: 0.7;
+}
+
+div.sns-container {
+    margin: 1rem 2rem 0rem;
+    border-top: 1px solid black;
+    padding: 1rem 1rem 0rem;
+}
+
+table.table01{
+  margin: 0 auto;
+}
+
+table.table01 th,
+table.table01 td {
+  border-right: 1px solid #fff;
+  vertical-align: middle;
+  font-size: 0.8rem;
+}
+table.table01 tbody tr {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 768px)  {
   #menu-btn {
     display: block;
     width: 30px;
@@ -161,12 +263,31 @@ p.home{
     opacity: 1;
     visibility: visible;
   }
+
+
+  div.container ul.item {
+    max-width: 420px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  div.box-home{
+    margin: 1.5rem 1.5rem;
+    font-size: 0.8rem;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    width: auto;
+    height: auto;
+    background-color: #f1f0f0;
+    }
+  div.box-about{
+    margin: 1.5rem 1.5rem;
+    border-radius: 10px;
+    padding: 1rem 1rem;
+    width: auto;
+    height: auto;
+    background-color: #f1f0f0;
+    }
 }
 
-/* =============================================
-フッターのCSSはここから
-============================================= */
-/* フッター01 */
 footer.footer01 {
   margin: 0rem 2rem;
   text-align: center;
@@ -174,10 +295,6 @@ footer.footer01 {
 
 p.copyright {
   color: #000;
-}
-ul.sns-container {
-  text-align: center;
-  padding: 0rem 0rem 2rem 0rem;
 }
 
 .dli-mail {
