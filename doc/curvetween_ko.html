@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CurveTween</title>
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="icon" type="image/x-icon" href="./img/ptx_logo_108x108.png">
+  </head>
+  <body>
+    <header class="header09">
+      <input id="nav-input" type="checkbox" class="nav-hidden" />
+      <label id="menu-btn" for="nav-input"><span></span></label>
+      <nav class="nav">
+        <ul class="item">
+          <li class="list">
+            <a href="https://ptkyoku.github.io/homepage/doc/curvetween_en.html">EN</a>
+          </li>
+          <li class="list">
+            <a href="https://ptkyoku.github.io/homepage/doc/curvetween_jp.html">JP</a>
+          </li>
+          <li class="list">
+            <a href="https://ptkyoku.github.io/homepage/doc/curvetween_cn.html">CN</a>
+          </li>
+          <li class="list">
+            <a href="#" class="title01">KO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="box-home">
+      <h2 class="title">CurveTween 문서</h2>
+    </div>
+    <div class="box-home">
+      <h3 class="title"><p class="title">기능 목록</p></h3>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Fade（페이드)</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">오브젝트의 투명도(Alpha)를 애니메이션합니다.</p>
+      <h5 class="title">・지원 컴포넌트</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- SpriteRenderer</li>
+        <li style="padding-left: 2px">- Image</li>
+        <li style="padding-left: 2px">- CanvasGroup</li>
+        <li style="padding-left: 2px">- Text/TextMeshPro</li>
+        <li style="padding-left: 2px">- Material（Color の Alpha）</li>
+      </ul>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoFade(1f)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Move（이동)</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">Transform의 위치를 애니메이션합니다.</p>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoMove(position)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Scale（확대/축소)</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">Transform의 스케일을 애니메이션합니다.</p>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoScale(scale)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Rotate（회전)</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">Transform의 회전을 애니메이션합니다.</p>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoRotation(rotate)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Color（컬러)</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">Color 값을 애니메이션합니다.</p>
+      <h5 class="title">・지원 컴포넌트</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- SpriteRenderer</li>
+        <li style="padding-left: 2px">- Image</li>
+        <li style="padding-left: 2px">- Text/TextMeshPro</li>
+        <li style="padding-left: 2px">- Material（Color）</li>
+      </ul>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoColor(color)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Text（UI Text/TextMeshPro）</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">타이핑 효과의 텍스트 애니메이션을 제공합니다.</p>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoTextTypewriter()</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">TextPro (TextMeshPro)</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">리치 텍스트, 타이핑 애니메이션, 회전 애니메이션, 폰트 크기 스케일 애니메이션을 지원합니다.</p>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoTextProTypewriter()</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Light</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">Unity Light 컴포넌트의 다양한 속성을 애니메이션합니다.</p>
+      <h5 class="title">・지원 속성</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- color</li>
+        <li style="padding-left: 2px">- intensity</li>
+        <li style="padding-left: 2px">- range</li>
+      </ul>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>target.DoLight(color, intensity, range)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">PathCurveAnimation</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">여러 포인트로 구성된 커브(경로)를 따라 오브젝트를 이동시키는 애니메이션 기능입니다.</p>
+      <h5 class="title">・예시</h5>
+      <ul class="content">
+        <li>path.SetTarget(target)</li>
+        <li style="padding-left: 38px">.SnapTargetToFirstPoint()</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+    </div>
+    <div class="box-home">
+      <h3 class="title" ><p class="title">API 참고 문서</p></h3>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoCanvasFade</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">CanvasGroup의 alpha 값을 애니메이션하기 위한 유틸리티 메서드입니다.</h5>
+      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, bool blocksraycasts, AnimationCurve curve);</p>
+      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, bool blocksraycasts, AnimationCurve curve);</p>
+      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, float duration = 1);</p>
+      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, bool blocksraycasts, float duration = 1);</p>
+      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, float duration = 1);</p>
+      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, bool blocksraycasts, float duration = 1);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- MonoBehaviour target：</li>
+        <li style="padding-left: 15px">페이드 대상이 되는 컴포넌트. CanvasGroup이 없을 경우 자동으로 추가하여 사용합니다.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- CanvasGroup target：</li>
+        <li style="padding-left: 15px">페이드 대상이 되는 CanvasGroup 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float forwardValue：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 alpha 값(0–1).</li>
+        <li style="padding-left: 15px">정방향: 현재 alpha → forwardValue</li>
+        <li style="padding-left: 15px">역방향: forwardValue → 현재 alpha</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool blocksraycasts：</li>
+        <li style="padding-left: 15px">CanvasGroup.blocksRaycasts 값을 설정할지 여부.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoFade</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">대상 오브젝트의 alpha 값을 애니메이션하기 위한 유틸리티 메서드입니다.</h5>
+      <p class="content">DoFade(this Graphic target, float forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoFade(this Renderer target, float forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoFade(this Material target, float forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoFade(this Material target, float forwardValue, float duration = 1);</p>
+      <p class="content">DoFade(this Renderer target, float forwardValue, float duration = 1);</p>
+      <p class="content">DoFade(this Graphic target, float forwardValue, float duration = 1);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Graphic target：</li>
+        <li style="padding-left: 15px">페이드 대상이 되는 UI Graphic 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Renderer target：</li>
+        <li style="padding-left: 15px">페이드 대상이 되는 Renderer 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Material target：</li>
+        <li style="padding-left: 15px">페이드 대상이 되는 Material 인스턴스.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float forwardValue：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 alpha 값(0–1).</li>
+        <li style="padding-left: 15px">정방향: 현재 color.a → forwardValue</li>
+        <li style="padding-left: 15px">역방향: forwardValue → 현재 color.a</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoLight / DoIntensity / DoRange</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">Light 컴포넌트의 color, intensity, range 값을 애니메이션하기 위한 유틸리티 메서드입니다.</h5>
+      <p class="content">DoLight(this Light target, Color color, float duration = 1);</p>
+      <p class="content">DoLight(this Light target, Color color, float intensity, float duration = 1);</p>
+      <p class="content">DoLight(this Light target, Color color, float intensity, float range, float duration = 1);</p>
+      <p class="content">DoLight(this Light target, Color color, float intensity, float range, AnimationCurve curve);</p>
+      <p class="content">DoLight(this Light target, Color color, AnimationCurve curve);</p>
+      <p class="content">DoLight(this Light target, Color color, float intensity, AnimationCurve curve);</p>
+      <p class="content">DoIntensity(this Light target, float intensity, float duration = 1);</p>
+      <p class="content">DoIntensity(this Light target, float intensity, AnimationCurve curve);</p>
+      <p class="content">DoRange(this Light target, float range, float duration = 1);</p>
+      <p class="content">DoRange(this Light target, float range, AnimationCurve curve);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Light target：</li>
+        <li style="padding-left: 15px">애니메이션 대상이 되는 UnityEngine.Light 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Color color：</li>
+        <li style="padding-left: 15px">Light color의 정방향 목표값.</li>
+        <li style="padding-left: 15px">정방향: 현재 color → color</li>
+        <li style="padding-left: 15px">역방향: color → 현재 color</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float intensity：</li>
+        <li style="padding-left: 15px">Light intensity(밝기)의 정방향 목표값.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → intensity</li>
+        <li style="padding-left: 15px">역방향: intensity → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float range：</li>
+        <li style="padding-left: 15px">Light range(조명 범위)의 정방향 목표값.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → range</li>
+        <li style="padding-left: 15px">역방향: range → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMove / DoMoveX / DoMoveY / DoMoveZ</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">오브젝트의 이동을 애니메이션하기 위한 유틸리티 메서드입니다.</h5>
+      <p class="content">DoMove(this GameObject target, Vector3 forwardValue, float duration = 1);</p>
+      <p class="content">DoMove<T>(this T target, Vector3 forwardValue, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoMove<T>(this T target, Vector3 forwardValue, float duration = 1) where T : Component;</p>
+      <p class="content">DoMove(this GameObject target, Vector3 forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoMoveX<T>(this GameObject target, float x, AnimationCurve curve);</p>
+      <p class="content">DoMoveX<T>(this T target, float x, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoMoveX<T>(this T target, float x, float duration = 1) where T : Component;</p>
+      <p class="content">DoMoveX<T>(this GameObject target, float x, float duration = 1);</p>
+      <p class="content">DoMoveY<T>(this GameObject target, float y, AnimationCurve curve);</p>
+      <p class="content">DoMoveY<T>(this T target, float y, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoMoveY<T>(this T target, float y, float duration = 1) where T : Component;</p>
+      <p class="content">DoMoveY<T>(this GameObject target, float y, float duration = 1);</p>
+      <p class="content">DoMoveZ<T>(this GameObject target, float z, AnimationCurve curve);</p>
+      <p class="content">DoMoveZ<T>(this T target, float z, float duration = 1) where T : Component;</p>
+      <p class="content">DoMoveZ<T>(this T target, float z, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoMoveZ<T>(this GameObject target, float z, float duration = 1);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- GameObject target：</li>
+        <li style="padding-left: 15px">이동 애니메이션 대상이 되는 GameObject. Transform을 포함해야 합니다.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- T target：</li>
+        <li style="padding-left: 15px">Transform을 가진 모든 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 위치.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → forwardValue</li>
+        <li style="padding-left: 15px">역방향: forwardValue → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z：</li>
+        <li style="padding-left: 15px">각 축의 정방향 목표 좌표.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → 목표값</li>
+        <li style="padding-left: 15px">역방향: 목표값 → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoRotation / DoRotationX / DoRotationY / DoRotationZ</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">오브젝트의 회전을 애니메이션하기 위한 유틸리티 메서드입니다.</h5>
+      <p class="content">DoRotation(this GameObject target, Vector3 forwardValue, float duration = 1);</p>
+      <p class="content">DoRotation(this GameObject target, Vector3 forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoRotation<T>(this T target, Vector3 forwardValue, float duration = 1) where T : Component;</p>
+      <p class="content">DoRotation<T>(this T target, Vector3 forwardValue, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoRotationX(this GameObject target, float x, float duration = 1);</p>
+      <p class="content">DoRotationX(this GameObject target, float x, AnimationCurve curve);</p>
+      <p class="content">DoRotationX<T>(this T target, float x, float duration = 1) where T : Component;</p>
+      <p class="content">DoRotationX<T>(this T target, float x, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoRotationY(this GameObject target, float y, float duration = 1);</p>
+      <p class="content">DoRotationY(this GameObject target, float y, AnimationCurve curve);</p>
+      <p class="content">DoRotationY<T>(this T target, float y, float duration = 1) where T : Component;</p>
+      <p class="content">DoRotationY<T>(this T target, float y, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoRotationZ(this GameObject target, float z, float duration = 1);</p>
+      <p class="content">DoRotationZ(this GameObject target, float z, AnimationCurve curve);</p>
+      <p class="content">DoRotationZ<T>(this T target, float z, float duration = 1) where T : Component;</p>
+      <p class="content">DoRotationZ<T>(this T target, float z, AnimationCurve curve) where T : Component;</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- GameObject target：</li>
+        <li style="padding-left: 15px">이동 애니메이션 대상이 되는 GameObject. Transform을 포함해야 합니다.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- T target：</li>
+        <li style="padding-left: 15px">Transform을 가진 모든 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 오일러 각도.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → forwardValue</li>
+        <li style="padding-left: 15px">역방향: forwardValue → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z：</li>
+        <li style="padding-left: 15px">각 축의 정방향 목표 회전 각도.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → 목표값</li>
+        <li style="padding-left: 15px">역방향: 목표값 → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoScale / DoScaleX / DoScaleY / DoScaleZ</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">오브젝트의 스케일을 애니메이션하기 위한 유틸리티 메서드입니다.</h5>
+      <p class="content">DoScale(this GameObject target, Vector3 forwardValue, float duration = 1);</p>
+      <p class="content">DoScale(this GameObject target, Vector3 forwardValue, AnimationCurve curve);</p>
+      <p class="content">DoScale<T>(this T target, Vector3 forwardValue, float duration = 1) where T : Component;</p>
+      <p class="content">DoScale<T>(this T target, Vector3 forwardValue, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoScaleX(this GameObject target, float x, float duration = 1);</p>
+      <p class="content">DoScaleX(this GameObject target, float x, AnimationCurve curve);</p>
+      <p class="content">DoScaleX<T>(this T target, float x, float duration = 1) where T : Component;</p>
+      <p class="content">DoScaleX<T>(this T target, float x, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoScaleY(this GameObject target, float y, float duration = 1);</p>
+      <p class="content">DoScaleY(this GameObject target, float y, AnimationCurve curve);</p>
+      <p class="content">DoScaleY<T>(this T target, float y, float duration = 1) where T : Component;</p>
+      <p class="content">DoScaleY<T>(this T target, float y, AnimationCurve curve) where T : Component;</p>
+      <p class="content">DoScaleZ(this GameObject target, float z, float duration = 1);</p>
+      <p class="content">DoScaleZ(this GameObject target, float z, AnimationCurve curve);</p>
+      <p class="content">DoScaleZ<T>(this T target, float z, float duration = 1) where T : Component;</p>
+      <p class="content">DoScaleZ<T>(this T target, float z, AnimationCurve curve) where T : Component;</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- GameObject target：</li>
+        <li style="padding-left: 15px">이동 애니메이션 대상이 되는 GameObject. Transform을 포함해야 합니다.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- T target：</li>
+        <li style="padding-left: 15px">Transform을 가진 모든 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 스케일 값.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → forwardValue</li>
+        <li style="padding-left: 15px">역방향: forwardValue → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z：</li>
+        <li style="padding-left: 15px">각 축의 정방향 목표 스케일 값.</li>
+        <li style="padding-left: 15px">정방향: 현재값 → 목표값</li>
+        <li style="padding-left: 15px">역방향: 목표값 → 현재값</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoTextTypewriter</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">텍스트를 한 글자씩 표시하는 타이핑 애니메이션을 실행합니다. 기존 텍스트 뒤에 추가하는 방식도 지원합니다.</h5>
+      <p class="content">DoTextTypewriter(this Text target, float duration = 1);</p>
+      <p class="content">DoTextTypewriter(this TMP_Text target, float duration = 1);</p>
+      <p class="content">DoTextTypewriter(this Text target, string text, float duration = 1);</p>
+      <p class="content">DoTextTypewriter(this TMP_Text target, string text, float duration = 1);</p>
+      <p class="content">DoTextTypewriter(this Text target, AnimationCurve curve);</p>
+      <p class="content">DoTextTypewriter(this Text target, string text, AnimationCurve curve);</p>
+      <p class="content">DoTextTypewriter(this TMP_Text target, AnimationCurve curve);</p>
+      <p class="content">DoTextTypewriter(this TMP_Text target, string text, AnimationCurve curve);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Text target：</li>
+        <li style="padding-left: 15px">UnityEngine.UI.Text 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- TMP_Text target：</li>
+        <li style="padding-left: 15px">TextMeshPro 텍스트 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text：</li>
+        <li style="padding-left: 15px">타이핑 애니메이션으로 표시할 추가 텍스트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoTextProTypewriter</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">리치 텍스트를 지원하는 타이핑 애니메이션입니다.</h5>
+      <p class="content">DoTextProTypewriter(this TMP_Text target, float duration = 1);</p>
+      <p class="content">DoTextProTypewriter(this TMP_Text target, string text, float duration = 1);</p>
+      <p class="content">DoTextProTypewriter(this TMP_Text target, AnimationCurve curve);</p>
+      <p class="content">DoTextProTypewriter(this TMP_Text target, string text, AnimationCurve curve);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target：</li>
+        <li style="padding-left: 15px">TextMeshPro 텍스트 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text：</li>
+        <li style="padding-left: 15px">타이핑 애니메이션으로 표시할 추가 텍스트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoTextProRotateTween</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">TextMeshPro 문자에 회전 애니메이션을 적용합니다.</h5>
+      <p class="content">DoTextProRotateTween(this TMP_Text target, float rotate, float duration = 1);</p>
+      <p class="content">DoTextProRotateTween(this TMP_Text target, float rotate, AnimationCurve curve);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target：</li>
+        <li style="padding-left: 15px">TextMeshPro 텍스트 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float rotate：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 회전 각도.</li>
+        <li style="padding-left: 15px">정방향: 0 → rotate</li>
+        <li style="padding-left: 15px">역방향: rotate → 0</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoTextProSizeTween</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">TextMeshPro의 폰트 크기를 애니메이션으로 변경합니다.</h5>
+      <p class="content">DoTextProSizeTween(this TMP_Text target, float fontsize, float duration = 1);</p>
+      <p class="content">DoTextProSizeTween(this TMP_Text target, float fontsize, AnimationCurve curve);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target：</li>
+        <li style="padding-left: 15px">TextMeshPro 텍스트 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float fontsize：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 폰트 크기.</li>
+        <li style="padding-left: 15px">정방향: 현재 fontsize → fontsize</li>
+        <li style="padding-left: 15px">역방향: fontsize → 현재 fontsize</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoTextProTween</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">리치 텍스트를 지원하며, 타이핑·회전·폰트 크기 변화를 동시에 실행할 수 있는 복합 텍스트 애니메이션 기능입니다.</h5>
+      <p class="content">DoTextProTween(this TMP_Text target, float duration = 1);</p>
+      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, float duration = 1);</p>
+      <p class="content">DoTextProTween(this TMP_Text target, float fontsize, float rotate, float duration = 1);</p>
+      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, float rotate, float duration = 1);</p>
+      <p class="content">DoTextProTween(this TMP_Text target, AnimationCurve curve);</p>
+      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, AnimationCurve curve);</p>
+      <p class="content">DoTextProTween(this TMP_Text target, float fontsize, float rotate, AnimationCurve curve);</p>
+      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, float rotate, AnimationCurve curve);</p>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target：</li>
+        <li style="padding-left: 15px">TextMeshPro 텍스트 컴포넌트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text：</li>
+        <li style="padding-left: 15px">타이핑 애니메이션으로 표시할 추가 텍스트.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float fontsize：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 폰트 크기.</li>
+        <li style="padding-left: 15px">정방향: 현재 fontsize → fontsize</li>
+        <li style="padding-left: 15px">역방향: fontsize → 현재 fontsize</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float rotate：</li>
+        <li style="padding-left: 15px">정방향 재생 시 도달할 회전 각도.</li>
+        <li style="padding-left: 15px">정방향: 0 → rotate</li>
+        <li style="padding-left: 15px">역방향: rotate → 0</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">애니메이션에 걸리는 시간(초).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">사용자 정의 애니메이션 커브.</li>
+        <li style="padding-left: 15px">커브의 시간축이 애니메이션 시간으로 사용되므로 duration은 무시됩니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Path Settings</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">여러 포인트로 구성된 커브(경로)를 따라 오브젝트를 이동시키는 애니메이션 기능입니다.</h5>
+      <p class="content">SetClosed(bool closed); </p>
+      <ul class="content">
+        <li style="padding-left: 15px">경로의 시작점과 끝점을 연결할지 설정합니다.</li>
+      </ul>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- bool closed：</li>
+        <li style="padding-left: 15px">true：닫힌 루프</li>
+        <li style="padding-left: 15px">false：열린 경로</li>
+      </ul>
+      <p class="content">SetLookMode(PathLookMode lookmode);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">이동 중 오브젝트가 바라볼 방향을 설정합니다.</li>
+      </ul>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- PathLookMode lookmode：</li>
+        <li style="padding-left: 15px">None：방향을 변경하지 않음</li>
+        <li style="padding-left: 15px">Forward：경로의 진행 방향(접선 방향)을 바라봄</li>
+        <li style="padding-left: 15px">Right：진행 방향 기준 +X 방향</li>
+        <li style="padding-left: 15px">Left：진행 방향 기준 –X 방향</li>
+      </ul>
+      <p class="content">SetPoints(List<Vector3> vectors);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">경로를 구성하는 제어점 리스트를 설정합니다.</li>
+      </ul>
+      <p class="content">SetTarget(Transform target);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">경로를 따라 이동할 대상 Transform을 설정합니다.</li>
+      </ul>
+      <p class="content">SetUseLocalPosition(bool uselocal);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">로컬 좌표를 사용할지 설정합니다.</li>
+      </ul>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- bool uselocal：</li>
+        <li style="padding-left: 15px">true：로컬 좌표 사용</li>
+        <li style="padding-left: 15px">false：월드 좌표 사용</li>
+      </ul>
+      <p class="content">SnapTargetToFirstPoint();</p>
+      <ul class="content">
+        <li style="padding-left: 15px">대상의 위치를 경로의 첫 번째 포인트로 이동시킵니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">CurveTween Settings</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">SetDelay(float delay);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션 시작 전 지연 시간을 설정합니다.</li>
+      </ul>
+      <p class="content">SetDuration(float duration);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션 지속 시간을 설정합니다.</li>
+      </ul>
+      <p class="content">SetEase(EaseType easeType);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">EaseType에 따른 0–1 정규화 커브를 설정합니다.</li>
+      </ul>
+      <p class="content">SetLoop(bool loop);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션 반복 여부를 설정합니다.</li>
+      </ul>
+      <p class="content">SetLoopCount(int loopCount);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">반복 횟수를 설정합니다.</li>
+      </ul>
+      <p class="content">SetLoopDelay(bool loopDelay);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">반복 시 delay를 적용할지 설정합니다.</li>
+      </ul>
+      <p class="content">SetLoopType(LoopType loopType);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">반복 방식 설정</li>
+      </ul>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- LoopType loopType：</li>
+        <li style="padding-left: 15px">Resart：0 → 1 반복</li>
+        <li style="padding-left: 15px">YoYo：0 → 1 → 0 반복</li>
+        <li style="padding-left: 15px">Increment：기존 값에 누적</li>
+      </ul>
+      <p class="content">SetScaledTime(bool scaledtime);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">Time.timeScale에 의존할지 설정합니다.</li>
+      </ul>
+      <p class="content">SetYoYoDelay(float yoYoDelay);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">YoYo 모드에서 0 → 1 도달 후 역방향 재생 전 지연 시간.</li>
+      </ul>
+      <p class="content">SetValue(object value);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션 시작 전에 target 또는 forwardValue를 초기화합니다.</li>
+        <li style="padding-left: 15px">지원 타입: CanvasGroup / Graphic / Material / Transform / Text / TMP_Text / Vector3 / String / float 등</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Play / Stop</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">void Play();</p>
+      <p class="content">void Play(bool reversePlay);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션을 재생합니다.</li>
+      </ul>
+      <h5 class="title">・파라미터</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- bool reversePlay：</li>
+        <li style="padding-left: 15px">reversePlay = true: 역방향 재생</li>
+      </ul>
+      <p class="content">void PlayOnce();</p>
+      <ul class="content">
+        <li style="padding-left: 15px">한 번만 재생하고 종료 후 해제합니다. (루프 설정 시 해제하지 않음)</li>
+      </ul>
+      <p class="content">void PlayReverseOnce();</p>
+      <ul class="content">
+        <li style="padding-left: 15px">역방향으로 한 번 재생하고 종료 후 해제합니다. (루프 설정 시 해제하지 않음)</li>
+      </ul>
+      <p class="content">void Stop();</p>
+      <ul class="content">
+        <li style="padding-left: 15px">재생 중인 애니메이션을 중지합니다.</li>
+      </ul>
+      <p class="content">void StopAndReset();</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션을 중지하고 초기 상태로 되돌립니다.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">Event Callbacks</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">void AddOnStartListener(UnityAction call);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션 시작 시 호출됩니다.</li>
+      </ul>
+      <p class="content">void AddOnYoYoListener(UnityAction call);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">YoYo 애니메이션에서 0 → 1 도달 시 호출됩니다.</li>
+      </ul>
+      <p class="content">void AddOnCompleteListener(UnityAction call);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">애니메이션 완료 시 호출됩니다. (루프 중에는 호출되지 않음)</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">GetAnimationCurve</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">지정한 EaseType에 따라 Keyframe 배열 형태의 애니메이션 커브를 생성하여 반환합니다.</h5>
+      <p class="content">Keyframe[] GetAnimationCurve(EaseType easeType);</p></div>
+    </div>
+
+    <script>
+      const accordions = document.querySelectorAll(".accordion");
+      accordions.forEach(acc => {
+        acc.addEventListener("click", () => {
+          const panel = acc.nextElementSibling;
+          const arrow = acc.querySelector(".arrow");
+          const isOpen = panel.style.display === "block";
+
+          panel.style.display = isOpen ? "none" : "block";
+          arrow.textContent = isOpen ? "▶" : "▼";
+        });
+      });
+    </script>
+    <footer class="footer01">
+    	<div>
+    		<p class="copyright"><small>Copyright © 2024 Ptkyoku.</small></p>
+    	</div>
+    </footer>
+  </body>
+</html>

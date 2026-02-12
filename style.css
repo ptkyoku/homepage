@@ -88,11 +88,6 @@ div.plugins{
     margin: 1rem auto;
     width: 50%;
 }
-h1.plugins{
-  font-size: 2rem;
-  font-weight: bold;
-  display: inline-block;
-}
 
 div.box-home{
     margin: 1.5rem auto;
@@ -150,9 +145,56 @@ p.content {
   border-bottom: 1px solid #9a9696;
 }
 
+
+div.box-home ul.content{
+    margin: auto 0.5rem;
+    border-radius: 5px;
+    background-color: #DDDDDD;
+    padding: 0.2rem 0.5rem;
+    font-weight: bold;
+}
+
+div.box-home p.content{
+    font-weight: bold;
+    margin: 0.2rem 0.2rem;
+    border-radius: 5px;
+    background-color: #AAAAAA;
+    padding: 0.2rem 0.5rem;
+}
+
+
+h1.plugins{
+  font-size: 2rem;
+  font-weight: bold;
+  display: inline-block;
+}
+
+
+h2.title{
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
 h3.title {
   font-weight: bold;
+  font-size: 1.4rem;
+}
+
+h3.title p.title{
+  border-left: 1.4rem solid #9a9696;
+  border-bottom: 0.1rem solid #9a9696;
+  padding: 0.2rem 0.2rem;
+}
+
+h4.title{
+  font-weight: bold;
   font-size: 1.2rem;
+  padding-top: 0.2rem;
+}
+
+h5.title{
+  font-size: 0.8rem;
 }
 
 div.container ul.item li.list a {
@@ -183,6 +225,34 @@ table.table01 td {
 table.table01 tbody tr {
   background-color: #fff;
 }
+
+.accordion {
+    cursor: pointer;
+    padding: 0px 12px;
+    background: #eee;.
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-weight: bold;
+    margin-top: 6px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .accordion .arrow {
+    width: 16px;
+    display: inline-block;
+  }
+
+  .panel {
+    display: none;
+    padding: 8px 12px;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 4px 4px;
+  }
+
 
 @media screen and (max-width: 768px)  {
   #menu-btn {
@@ -244,7 +314,7 @@ table.table01 tbody tr {
   }
 
   nav.nav {
-    width: 230px;
+    width: 130px;
     height: 100vh;
     position: fixed;
     top: 0;
@@ -274,9 +344,12 @@ table.table01 tbody tr {
     visibility: visible;
   }
 
+  div.image {
+    width: 100%;
+    height: 100%;
+  }
 
   div.container ul.item {
-    max-width: 420px;
     grid-template-columns: repeat(1, 1fr);
   }
   div.box-home{
@@ -334,4 +407,44 @@ p.copyright {
   border-radius: 0 0 0 0.1em;
   box-sizing: content-box;
   transform: translate(-50%, -50%) rotate(-45deg) skew(10deg, 10deg);
+}
+
+.button {
+  margin: 5px 10px 0px 10px;
+}
+
+.button05 {
+  display: inline-block;
+  font-weight: bold;
+  background: linear-gradient(90deg,
+      rgba(251, 176, 222, 1) 0%,
+      rgba(132, 240, 255, 1) 100%);
+  color: #fff;
+  padding: 5px 0px 5px 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  position: relative;
+  transition: all 0.2s;
+}
+
+.button05::after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  border-top: 2px solid #fff;
+  border-right: 2px solid #fff;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 25px;
+  margin: auto;
+  transition: all 0.2s;
+}
+
+.button05:hover {
+  box-shadow: rgba(100, 100, 111, 0.3) 0px 7px 29px 0px;
+}
+
+.button05:hover::after {
+  right: 15px;
 }
