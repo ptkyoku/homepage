@@ -42,7 +42,7 @@
       </div>
       <div class="panel">
       <p class="content">Animates the object's transparency (Alpha).</p>
-      <h5 class="title">・・Supported Components</h5>
+      <h5 class="title">• Supported Components</h5>
       <ul class="content">
         <li style="padding-left: 2px">- SpriteRenderer</li>
         <li style="padding-left: 2px">- Image</li>
@@ -50,7 +50,7 @@
         <li style="padding-left: 2px">- Text/TextMeshPro</li>
         <li style="padding-left: 2px">- Material（Color の Alpha）</li>
       </ul>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoFade(1f)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -64,7 +64,7 @@
       </div>
       <div class="panel">
       <p class="content">Animates the position of a Transform.</p>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoMove(position)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -78,7 +78,7 @@
       </div>
       <div class="panel">
       <p class="content">Animates the scale of a Transform.</p>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoScale(scale)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -92,7 +92,7 @@
       </div>
       <div class="panel">
       <p class="content">Animates the rotation of a Transform.</p>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoRotation(rotate)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -106,14 +106,14 @@
       </div>
       <div class="panel">
       <p class="content">Animates color values.</p>
-      <h5 class="title">・Supported Components</h5>
+      <h5 class="title">• Supported Components</h5>
       <ul class="content">
         <li style="padding-left: 2px">- SpriteRenderer</li>
         <li style="padding-left: 2px">- Image</li>
         <li style="padding-left: 2px">- Text/TextMeshPro</li>
         <li style="padding-left: 2px">- Material（Color）</li>
       </ul>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoColor(color)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -127,7 +127,7 @@
       </div>
       <div class="panel">
       <p class="content">Creates a typewriter-style text animation.</p>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoTextTypewriter()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -137,11 +137,11 @@
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">TextPro (TextMeshPro)</span></h4>
+        <span class="title">RichText (TextMeshPro)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Supports rich text, typewriter animation, rotation animation, and font-size scaling animation.</p>
-      <h5 class="title">・Example</h5>
+      <p class="content">Supports rich text, typing-style animations, rotation animations, and font-size scaling animations.</p>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoTextProTypewriter()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -155,13 +155,13 @@
       </div>
       <div class="panel">
       <p class="content">Animates various properties of a Unity Light component.</p>
-      <h5 class="title">・Supported Properties</h5>
+      <h5 class="title">• Supported Properties</h5>
       <ul class="content">
         <li style="padding-left: 2px">- color</li>
         <li style="padding-left: 2px">- intensity</li>
         <li style="padding-left: 2px">- range</li>
       </ul>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>target.DoLight(color, intensity, range)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -171,11 +171,107 @@
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">FillAmount</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">A feature that animates the Image component's fillAmount value.
+      Useful for gauges, cooldowns, circular loaders, and other UI expressions.</p>
+      <h5 class="title">• Target</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Image (Filled type)</li>
+      </ul>
+      <h5 class="title">• Example</h5>
+      <ul class="content">
+        <li>target.DoFillAmount(float)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">IntInterpolate / FloatInterpolate</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">A feature that animates numeric values in Text / TextMeshPro by interpolating them.
+      Ideal for count-ups, damage numbers, score animations, and more.</p>
+      <h5 class="title">• Target</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Text / TextMeshPro</li>
+      </ul>
+      <h5 class="title">• Example</h5>
+      <ul class="content">
+        <li>target.DoInterpolate(int/float)</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+      
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">TMPMeshExplodeInAnimation</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">An animation that directly manipulates TextMeshPro vertex data to make each character explode individually.
+      You can finely control speed, direction, spread, randomness, and more, making it suitable for flashy effects.</p>
+      <h5 class="title">• Target</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TextMeshPro</li>
+      </ul>
+      <h5 class="title">• Example</h5>
+      <ul class="content">
+        <li>path.DoMeshExplodeIn()</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul>
+      <h5 class="title">• Example</h5>
+      <ul class="content">
+        <li>path.DoMeshExplodeIn()</li>
+        <li style="padding-left: 38px">.SetExplosionPower(power)</li>
+        <li style="padding-left: 38px">.SetUseFadeOut(true).SetFadeDelay(delay)</li>
+        <li style="padding-left: 38px">.SetUseRotate(true).SetValue(min, max)</li>
+        <li style="padding-left: 38px">.SetUseFloatiness(true).SetValue(min, max)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+      
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">TMPMeshRevealAnimation</span></h4>
+      </div>
+      <div class="panel">
+      <p class="content">An animation that directly manipulates TextMeshPro vertices to create the following complex character effects:
+        Fade (alpha), Character Scale, Rotate, Move, Wave deformation, Bounce deformation.
+      It supports everything from typewriter-style reveals to highly dynamic and expressive text animations.</p>
+      <h5 class="title">• Target</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TextMeshPro</li>
+      </ul>
+      <h5 class="title">• Example</h5>
+      <ul class="content">
+        <li>path.DoMeshReveal()</li>
+        <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
+        <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul>
+      <h5 class="title">• Example</h5>
+      <ul class="content">
+        <li>path.DoMeshReveal()</li>
+        <li style="padding-left: 38px">.SetFadeTween(true).SetValue(alpha)</li>
+        <li style="padding-left: 38px">.SetScaleTween(true).SetValue(scale)</li>
+        <li style="padding-left: 38px">.SetPosTween(true).SetValue(pos)</li>
+        <li style="padding-left: 38px">.SetWave(WaveType).SetFactor(float)</li>
+        <li style="padding-left: 38px">.SetRotTween(true).SetValue(rot)</li>
+        <li style="padding-left: 38px">.Play();</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
         <span class="title">PathCurveAnimation</span></h4>
       </div>
       <div class="panel">
       <p class="content">Moves a target object along a curve (path) composed of multiple points.</p>
-      <h5 class="title">・Example</h5>
+      <h5 class="title">• Example</h5>
       <ul class="content">
         <li>path.SetTarget(target)</li>
         <li style="padding-left: 38px">.SnapTargetToFirstPoint()</li>
@@ -191,37 +287,38 @@
         <span class="title">DoCanvasFade</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Utility method for animating the alpha value of a CanvasGroup.</h5>
-      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, bool blocksraycasts, AnimationCurve curve);</p>
-      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, bool blocksraycasts, AnimationCurve curve);</p>
-      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, float duration = 1);</p>
-      <p class="content">DoCanvasFade(this MonoBehaviour target, float forwardValue, bool blocksraycasts, float duration = 1);</p>
-      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, float duration = 1);</p>
-      <p class="content">DoCanvasFade(this CanvasGroup target, float forwardValue, bool blocksraycasts, float duration = 1);</p>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">This utility method animates the alpha value of a CanvasGroup.</h5>
+      <p class="content">ITweenPlayer DoCanvasFade(this GameObject target, float forwardValue = 0, bool blocksraycasts = false, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoCanvasFade(this GameObject target, AnimationCurve curve, float forwardValue = 0, bool blocksraycasts = false);</p>
+      <p class="content">ITweenPlayer DoCanvasFade(this MonoBehaviour target, float forwardValue = 0, bool blocksraycasts = false, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoCanvasFade(this MonoBehaviour target, AnimationCurve curve, float forwardValue = 0, bool blocksraycasts = false);</p>
+      <p class="content">ITweenPlayer DoCanvasFade(this CanvasGroup target, float forwardValue = 0, bool blocksraycasts = false, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoCanvasFade(this CanvasGroup target, AnimationCurve curve, float forwardValue = 0, bool blocksraycasts = false);</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
-        <li style="padding-left: 2px">- MonoBehaviour target：</li>
-        <li style="padding-left: 15px">The component whose CanvasGroup will be faded. If the object does not have a CanvasGroup, one is automatically added.</li>
+        <li style="padding-left: 2px">- GameObject target：</li>
+        <li style="padding-left: 15px">The UnityEngine.GameObject to be faded. If it does not have a CanvasGroup attached, one will be added automatically and used.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- CanvasGroup target：</li>
-        <li style="padding-left: 15px">The CanvasGroup component to animate.</li>
+        <li style="padding-left: 2px">- MonoBehaviour target:</li>
+        <li style="padding-left: 15px">The component to be faded. If the object does not have a CanvasGroup, one will be added automatically.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- float forwardValue：</li>
-        <li style="padding-left: 15px">The target alpha value (0–1) when playing forward.</li>
-        <li style="padding-left: 15px">Forward: current alpha → forwardValue</li>
-        <li style="padding-left: 15px">Reverse: forwardValue → current alpha</li>
+        <li style="padding-left: 2px">- CanvasGroup target:</li>
+        <li style="padding-left: 15px">The CanvasGroup component to be faded.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- bool blocksraycasts：</li>
+        <li style="padding-left: 2px">- float forwardValue:</li>
+        <li style="padding-left: 15px">The target alpha value (0–1) when animating forward.</li>
+        <li style="padding-left: 15px">Forward playback: current alpha → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current alpha.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool blocksraycasts:</li>
         <li style="padding-left: 15px">Whether to set CanvasGroup.blocksRaycasts.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 2px">- float duration:</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
@@ -229,35 +326,98 @@
         <span class="title">DoFade</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Utility method for animating the alpha value of the target object.</h5>
-      <p class="content">DoFade(this Graphic target, float forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoFade(this Renderer target, float forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoFade(this Material target, float forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoFade(this Material target, float forwardValue, float duration = 1);</p>
-      <p class="content">DoFade(this Renderer target, float forwardValue, float duration = 1);</p>
-      <p class="content">DoFade(this Graphic target, float forwardValue, float duration = 1);</p>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">This utility method animates the alpha value of the target object.</h5>
+      <p class="content">ITweenPlayer DoFade(this Material target, float forwardValue = 0, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoFade(this Renderer target, float forwardValue = 0, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoFade(this Graphic target, float forwardValue = 0, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoFade(this Renderer target, AnimationCurve curve, float forwardValue = 0);</p>
+      <p class="content">ITweenPlayer DoFade(this Graphic target, AnimationCurve curve, float forwardValue = 0);</p>
+      <p class="content">ITweenPlayer DoFade(this Material target, AnimationCurve curve, float forwardValue = 0);</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
-        <li style="padding-left: 2px">- Graphic target：</li>
-        <li style="padding-left: 15px">UI Graphic component to fade.</li>
+        <li style="padding-left: 2px">- Graphic target:</li>
+        <li style="padding-left: 15px">The Graphic component to be faded.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- Renderer target：</li>
-        <li style="padding-left: 15px">Renderer component to fade.</li>
+        <li style="padding-left: 2px">- Renderer target:</li>
+        <li style="padding-left: 15px">The Renderer component to be faded.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- Material target：</li>
-        <li style="padding-left: 15px">Material instance to fade.</li>
+        <li style="padding-left: 2px">- Material target:</li>
+        <li style="padding-left: 15px">The Material instance to be faded.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- float forwardValue：</li>
-        <li style="padding-left: 15px">Target alpha value (0–1) when playing forward.</li>
-        <li style="padding-left: 15px">Forward: current color.a → forwardValue</li>
-        <li style="padding-left: 15px">Reverse: forwardValue → current color.a</li>
+        <li style="padding-left: 2px">- float forwardValue:</li>
+        <li style="padding-left: 15px">The target alpha value (0–1) when animating forward.</li>
+        <li style="padding-left: 15px">Forward playback: current color.a → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current color.a.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 2px">- float duration:</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoColor</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">This utility method animates the Color of the target object.</h5>
+      <p class="content">ITweenPlayer DoColor(this Graphic target, Color forwardValue, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoColor(this Graphic target, Color forwardValue, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoColor(this Renderer target, Color forwardValue, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoColor(this Renderer target, Color forwardValue, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoColor(this Material target, Color forwardValue, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoColor(this Material target, Color forwardValue, AnimationCurve curve);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Graphic target:</li>
+        <li style="padding-left: 15px">The Graphic component whose color will be animated.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Renderer target:</li>
+        <li style="padding-left: 15px">The Renderer component whose color will be animated.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Material target:</li>
+        <li style="padding-left: 15px">The Material instance whose color will be animated.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Color forwardValue:</li>
+        <li style="padding-left: 15px">The target Color value when animating forward.</li>
+        <li style="padding-left: 15px">Forward playback: current color → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current color.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoFillAmount</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">DoFillAmount is an extension method that smoothly animates the fillAmount of a UnityEngine.UI.Image.</h5>
+      <p class="content">ITweenPlayer DoFillAmount(this Image target, float forwardValue = 0, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoFillAmount(this Image target, AnimationCurve curve, float forwardValue = 0);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Image target:</li>
+        <li style="padding-left: 15px">The Image component to animate.</li>
+        <li style="padding-left: 15px">Must be an Image of type Filled, which supports the fillAmount property.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float forwardValue:</li>
+        <li style="padding-left: 15px">The target value when animating forward.</li>
+        <li style="padding-left: 15px">Forward playback: current value → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current value.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
@@ -266,338 +426,736 @@
       </div>
       <div class="panel">
       <h5 class="title">Utility methods for animating the color, intensity, and range of a Light component.</h5>
-      <p class="content">DoLight(this Light target, Color color, float duration = 1);</p>
-      <p class="content">DoLight(this Light target, Color color, float intensity, float duration = 1);</p>
-      <p class="content">DoLight(this Light target, Color color, float intensity, float range, float duration = 1);</p>
-      <p class="content">DoLight(this Light target, Color color, float intensity, float range, AnimationCurve curve);</p>
-      <p class="content">DoLight(this Light target, Color color, AnimationCurve curve);</p>
-      <p class="content">DoLight(this Light target, Color color, float intensity, AnimationCurve curve);</p>
-      <p class="content">DoIntensity(this Light target, float intensity, float duration = 1);</p>
-      <p class="content">DoIntensity(this Light target, float intensity, AnimationCurve curve);</p>
-      <p class="content">DoRange(this Light target, float range, float duration = 1);</p>
-      <p class="content">DoRange(this Light target, float range, AnimationCurve curve);</p>
-      <h5 class="title">・Parameters</h5>
+      <p class="content">ITweenPlayer DoColor(this Light target, Color color, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoColor(this Light target, Color color, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoIntensity(this Light target, float intensity, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoIntensity(this Light target, float intensity, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoRange(this Light target, float range, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoRange(this Light target, float range, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoLight(this Light target, bool colortween = false, Color color = default, bool intensitytween = false, float intensity = 0, bool rangetween = false, float range = 0, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoLight(this Light target, AnimationCurve curve, bool colortween = false, Color color = default, bool intensitytween = false, float intensity = 0, bool rangetween = false, float range = 0);</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Light target：</li>
-        <li style="padding-left: 15px">UnityEngine.Light component to animate.</li>
+        <li style="padding-left: 15px">The UnityEngine.Light component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool colortween：</li>
+        <li style="padding-left: 15px">Whether to animate the Light’s color.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Color color：</li>
-        <li style="padding-left: 15px">Forward target color.</li>
-        <li style="padding-left: 15px">Forward: current color → color</li>
-        <li style="padding-left: 15px">Reverse: color → current color</li>
+        <li style="padding-left: 15px">The forward target value when animating Light.color.</li>
+        <li style="padding-left: 15px">Forward playback: current target.color → color.</li>
+        <li style="padding-left: 15px">Reverse playback: color → current target.color.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool intensitytween：</li>
+        <li style="padding-left: 15px">Whether to animate the Light’s intensity.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float intensity：</li>
-        <li style="padding-left: 15px">Forward target intensity.</li>
-        <li style="padding-left: 15px">Forward: current → intensity</li>
-        <li style="padding-left: 15px">Reverse: intensity → current</li>
+        <li style="padding-left: 15px">The forward target value for Light intensity (brightness).</li>
+        <li style="padding-left: 15px">Forward playback: current value → intensity.</li>
+        <li style="padding-left: 15px">Reverse playback: intensity → current value.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool rangetween：</li>
+        <li style="padding-left: 15px">Whether to animate the Light’s range.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float range：</li>
-        <li style="padding-left: 15px">Forward target range.</li>
-        <li style="padding-left: 15px">Forward: current → range</li>
-        <li style="padding-left: 15px">Reverse: range → current</li>
+        <li style="padding-left: 15px">The forward target value for Light range.</li>
+        <li style="padding-left: 15px">Forward playback: current value → range.</li>
+        <li style="padding-left: 15px">Reverse playback: range → current value.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoMove / DoMoveX / DoMoveY / DoMoveZ</span></h4>
+        <span class="title">DoInterpolate</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Utility methods for animating object movement.</h5>
-      <p class="content">DoMove(this GameObject target, Vector3 forwardValue, float duration = 1);</p>
-      <p class="content">DoMove<T>(this T target, Vector3 forwardValue, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoMove<T>(this T target, Vector3 forwardValue, float duration = 1) where T : Component;</p>
-      <p class="content">DoMove(this GameObject target, Vector3 forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoMoveX<T>(this GameObject target, float x, AnimationCurve curve);</p>
-      <p class="content">DoMoveX<T>(this T target, float x, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoMoveX<T>(this T target, float x, float duration = 1) where T : Component;</p>
-      <p class="content">DoMoveX<T>(this GameObject target, float x, float duration = 1);</p>
-      <p class="content">DoMoveY<T>(this GameObject target, float y, AnimationCurve curve);</p>
-      <p class="content">DoMoveY<T>(this T target, float y, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoMoveY<T>(this T target, float y, float duration = 1) where T : Component;</p>
-      <p class="content">DoMoveY<T>(this GameObject target, float y, float duration = 1);</p>
-      <p class="content">DoMoveZ<T>(this GameObject target, float z, AnimationCurve curve);</p>
-      <p class="content">DoMoveZ<T>(this T target, float z, float duration = 1) where T : Component;</p>
-      <p class="content">DoMoveZ<T>(this T target, float z, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoMoveZ<T>(this GameObject target, float z, float duration = 1);</p>
-      <h5 class="title">・Parameters</h5>
-      <ul class="content">
-        <li style="padding-left: 2px">- GameObject target：</li>
-        <li style="padding-left: 15px">GameObject with a Transform.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- T target：</li>
-        <li style="padding-left: 15px">Any component with a Transform.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
-        <li style="padding-left: 15px">Forward target position.</li>
-        <li style="padding-left: 15px">Forward: current → forwardValue</li>
-        <li style="padding-left: 15px">Reverse: forwardValue → current</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">Forward target coordinate for each axis.</li>
-        <li style="padding-left: 15px">Forward: current → value</li>
-        <li style="padding-left: 15px">Reverse: value → current</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
-      </ul></div>
-
-      <div class="accordion">
-        <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoRotation / DoRotationX / DoRotationY / DoRotationZ</span></h4>
-      </div>
-      <div class="panel">
-      <h5 class="title">Utility methods for animating object rotation.</h5>
-      <p class="content">DoRotation(this GameObject target, Vector3 forwardValue, float duration = 1);</p>
-      <p class="content">DoRotation(this GameObject target, Vector3 forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoRotation<T>(this T target, Vector3 forwardValue, float duration = 1) where T : Component;</p>
-      <p class="content">DoRotation<T>(this T target, Vector3 forwardValue, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoRotationX(this GameObject target, float x, float duration = 1);</p>
-      <p class="content">DoRotationX(this GameObject target, float x, AnimationCurve curve);</p>
-      <p class="content">DoRotationX<T>(this T target, float x, float duration = 1) where T : Component;</p>
-      <p class="content">DoRotationX<T>(this T target, float x, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoRotationY(this GameObject target, float y, float duration = 1);</p>
-      <p class="content">DoRotationY(this GameObject target, float y, AnimationCurve curve);</p>
-      <p class="content">DoRotationY<T>(this T target, float y, float duration = 1) where T : Component;</p>
-      <p class="content">DoRotationY<T>(this T target, float y, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoRotationZ(this GameObject target, float z, float duration = 1);</p>
-      <p class="content">DoRotationZ(this GameObject target, float z, AnimationCurve curve);</p>
-      <p class="content">DoRotationZ<T>(this T target, float z, float duration = 1) where T : Component;</p>
-      <p class="content">DoRotationZ<T>(this T target, float z, AnimationCurve curve) where T : Component;</p>
-      <h5 class="title">・Parameters</h5>
-      <ul class="content">
-        <li style="padding-left: 2px">- GameObject target：</li>
-        <li style="padding-left: 15px">GameObject with a Transform.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- T target：</li>
-        <li style="padding-left: 15px">Any component with a Transform.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
-        <li style="padding-left: 15px">Forward target rotation (Euler angles).</li>
-        <li style="padding-left: 15px">Forward: current → forwardValue</li>
-        <li style="padding-left: 15px">Reverse: forwardValue → current</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">Forward target rotation angle for each axis.</li>
-        <li style="padding-left: 15px">Forward: current → value</li>
-        <li style="padding-left: 15px">Reverse: value → current</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
-      </ul></div>
-
-      <div class="accordion">
-        <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoScale / DoScaleX / DoScaleY / DoScaleZ</span></h4>
-      </div>
-      <div class="panel">
-      <h5 class="title">Utility methods for animating object scale.</h5>
-      <p class="content">DoScale(this GameObject target, Vector3 forwardValue, float duration = 1);</p>
-      <p class="content">DoScale(this GameObject target, Vector3 forwardValue, AnimationCurve curve);</p>
-      <p class="content">DoScale<T>(this T target, Vector3 forwardValue, float duration = 1) where T : Component;</p>
-      <p class="content">DoScale<T>(this T target, Vector3 forwardValue, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoScaleX(this GameObject target, float x, float duration = 1);</p>
-      <p class="content">DoScaleX(this GameObject target, float x, AnimationCurve curve);</p>
-      <p class="content">DoScaleX<T>(this T target, float x, float duration = 1) where T : Component;</p>
-      <p class="content">DoScaleX<T>(this T target, float x, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoScaleY(this GameObject target, float y, float duration = 1);</p>
-      <p class="content">DoScaleY(this GameObject target, float y, AnimationCurve curve);</p>
-      <p class="content">DoScaleY<T>(this T target, float y, float duration = 1) where T : Component;</p>
-      <p class="content">DoScaleY<T>(this T target, float y, AnimationCurve curve) where T : Component;</p>
-      <p class="content">DoScaleZ(this GameObject target, float z, float duration = 1);</p>
-      <p class="content">DoScaleZ(this GameObject target, float z, AnimationCurve curve);</p>
-      <p class="content">DoScaleZ<T>(this T target, float z, float duration = 1) where T : Component;</p>
-      <p class="content">DoScaleZ<T>(this T target, float z, AnimationCurve curve) where T : Component;</p>
-      <h5 class="title">・Parameters</h5>
-      <ul class="content">
-        <li style="padding-left: 2px">- GameObject target：</li>
-        <li style="padding-left: 15px">GameObject with a Transform.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- T target：</li>
-        <li style="padding-left: 15px">Any component with a Transform.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
-        <li style="padding-left: 15px">Forward target scale.</li>
-        <li style="padding-left: 15px">Forward: current → forwardValue</li>
-        <li style="padding-left: 15px">Reverse: forwardValue → current</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">Forward target scale value for each axis.</li>
-        <li style="padding-left: 15px">Forward: current → value</li>
-        <li style="padding-left: 15px">Reverse: value → current</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
-        <li >&nbsp</li>
-        <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
-      </ul></div>
-
-      <div class="accordion">
-        <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoTextTypewriter</span></h4>
-      </div>
-      <div class="panel">
-      <h5 class="title">Creates a typewriter-style animation that reveals text one character at a time.Can append to existing text.</h5>
-      <h5 class="title">Can append to existing text.</h5>
-      <p class="content">DoTextTypewriter(this Text target, float duration = 1);</p>
-      <p class="content">DoTextTypewriter(this TMP_Text target, float duration = 1);</p>
-      <p class="content">DoTextTypewriter(this Text target, string text, float duration = 1);</p>
-      <p class="content">DoTextTypewriter(this TMP_Text target, string text, float duration = 1);</p>
-      <p class="content">DoTextTypewriter(this Text target, AnimationCurve curve);</p>
-      <p class="content">DoTextTypewriter(this Text target, string text, AnimationCurve curve);</p>
-      <p class="content">DoTextTypewriter(this TMP_Text target, AnimationCurve curve);</p>
-      <p class="content">DoTextTypewriter(this TMP_Text target, string text, AnimationCurve curve);</p>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">Utility methods for animating numeric values in Text / TextMeshPro by interpolating them.</h5>
+      <p class="content">ITweenPlayer DoInterpolate(this Text target, int forwardValue, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoInterpolate(this Text target, int forwardValue, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoInterpolate(this Text target, float forwardValue, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoInterpolate(this Text target, float forwardValue, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoInterpolate(this TMP_Text target, float forwardValue, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoInterpolate(this TMP_Text target, float forwardValue, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoInterpolate(this TMP_Text target, int forwardValue, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoInterpolate(this TMP_Text target, int forwardValue, AnimationCurve curve);</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Text target：</li>
-        <li style="padding-left: 15px">UnityEngine.UI.Text component.</li>
+        <li style="padding-left: 15px">The UnityEngine.UI.Text component to animate.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">TextMeshPro component.</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">Text to append and animate.</li>
+        <li style="padding-left: 2px">- float/Int forwardValue：</li>
+        <li style="padding-left: 15px">Forward playback: current value → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current value.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoTextProTypewriter</span></h4>
+        <span class="title">DoMove / DoMove(X/Y/Z)</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Rich-text–compatible typewriter animation.</h5>
-      <p class="content">DoTextProTypewriter(this TMP_Text target, float duration = 1);</p>
-      <p class="content">DoTextProTypewriter(this TMP_Text target, string text, float duration = 1);</p>
-      <p class="content">DoTextProTypewriter(this TMP_Text target, AnimationCurve curve);</p>
-      <p class="content">DoTextProTypewriter(this TMP_Text target, string text, AnimationCurve curve);</p>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">Utility methods for animating the movement of a target object.</h5>
+      <p class="content">ITweenPlayer DoMoveX(this GameObject target, float x, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoMoveX(this GameObject target, float x, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoMoveY(this GameObject target, float y, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoMoveY(this GameObject target, float y, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoMoveZ(this GameObject target, float z, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoMoveZ(this GameObject target, float z, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoMove(this GameObject target, Vector3 forwardValue, float duration = 1, bool relative = false);</p>
+      <p class="content">ITweenPlayer DoMove(this GameObject target, Vector3 forwardValue, AnimationCurve curve, bool relative = false);</p>
+      <p class="content">ITweenPlayer DoMoveX&lt;T&gt;(this T target, float x, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoMoveX&lt;T&gt;(this T target, float x, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoMoveY&lt;T&gt;(this T target, float y, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoMoveY&lt;T&gt;(this T target, float y, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoMoveZ&lt;T&gt;(this T target, float z, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoMoveZ&lt;T&gt;(this T target, float z, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoMove&lt;T&gt;(this T target, Vector3 forwardValue, float duration = 1, bool relative = false) where T : Component;</p>
+      <p class="content">ITweenPlayer DoMove&lt;T&gt;(this T target, Vector3 forwardValue, AnimationCurve curve, bool relative = false) where T : Component;</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
-        <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">TextMeshPro component.</li>
+        <li style="padding-left: 2px">- GameObject target：</li>
+        <li style="padding-left: 15px">The UnityEngine.GameObject to animate. Any object with a Transform can be used.</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">Text to append and animate.</li>
+        <li style="padding-left: 2px">- T target：</li>
+        <li style="padding-left: 15px">The component to animate. Any component with a Transform can be used.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
+        <li style="padding-left: 15px">The target position when playing forward.</li>
+        <li style="padding-left: 15px">Forward playback: current value → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current value.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z：</li>
+        <li style="padding-left: 15px">The forward target value for the (x/y/z) coordinate.</li>
+        <li style="padding-left: 15px">Forward playback: current value → (x/y/z).</li>
+        <li style="padding-left: 15px">Reverse playback: (x/y/z) → current value.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoTextProRotateTween</span></h4>
+        <span class="title">DoRotation / DoRotation(X/Y/Z)</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Applies rotation animation to TextMeshPro characters.</h5>
-      <p class="content">DoTextProRotateTween(this TMP_Text target, float rotate, float duration = 1);</p>
-      <p class="content">DoTextProRotateTween(this TMP_Text target, float rotate, AnimationCurve curve);</p>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">Utility methods for animating the rotation of a target object.</h5>
+      <p class="content">ITweenPlayer DoRotationX(this GameObject target, float x, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoRotationX(this GameObject target, float x, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoRotationY(this GameObject target, float y, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoRotationY(this GameObject target, float y, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoRotationZ(this GameObject target, float z, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoRotationZ(this GameObject target, float z, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoRotation(this GameObject target, Vector3 forwardValue, float duration = 1, bool relative = false);</p>
+      <p class="content">ITweenPlayer DoRotation(this GameObject target, Vector3 forwardValue, AnimationCurve curve, bool relative = false);</p>
+      <p class="content">ITweenPlayer DoRotationX&lt;T&gt;(this T target, float x, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoRotationX&lt;T&gt;(this T target, float x, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoRotationY&lt;T&gt;(this T target, float y, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoRotationY&lt;T&gt;(this T target, float y, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoRotationZ&lt;T&gt;(this T target, float z, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoRotationZ&lt;T&gt;(this T target, float z, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoRotation&lt;T&gt;(this T target, Vector3 forwardValue, float duration = 1, bool relative = false) where T : Component;</p>
+      <p class="content">ITweenPlayer DoRotation&lt;T&gt;(this T target, Vector3 forwardValue, AnimationCurve curve, bool relative = false) where T : Component;</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- GameObject target：</li>
+        <li style="padding-left: 15px">The UnityEngine.GameObject to animate. Any object with a Transform can be used.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- T target：</li>
+        <li style="padding-left: 15px">The component to animate. Any component with a Transform can be used.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
+        <li style="padding-left: 15px">The target rotation angle when playing forward.</li>
+        <li style="padding-left: 15px">Forward playback: current value → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current value.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z：</li>
+        <li style="padding-left: 15px">The forward target angle for (x/y/z)-axis rotation.</li>
+        <li style="padding-left: 15px">Forward playback: current value → (x/y/z).</li>
+        <li style="padding-left: 15px">Reverse playback: (x/y/z) → current value.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoScale / DoScale(X/Y/Z)</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">Utility methods for animating the scaling of a target object.</h5>
+      <p class="content">ITweenPlayer DoScaleX(this GameObject target, float x, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoScaleX(this GameObject target, float x, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoScaleY(this GameObject target, float y, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoScaleY(this GameObject target, float y, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoScaleZ(this GameObject target, float z, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoScaleZ(this GameObject target, float z, AnimationCurve curve);</p>
+      <p class="content">ITweenPlayer DoScale(this GameObject target, Vector3 forwardValue, float duration = 1, bool relative = false);</p>
+      <p class="content">ITweenPlayer DoScale(this GameObject target, Vector3 forwardValue, AnimationCurve curve, bool relative = false);</p>
+      <p class="content">ITweenPlayer DoScaleX&lt;T&gt;(this T target, float x, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoScaleX&lt;T&gt;(this T target, float x, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoScaleY&lt;T&gt;(this T target, float y, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoScaleY&lt;T&gt;(this T target, float y, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoScaleZ&lt;T&gt;(this T target, float z, float duration = 1) where T : Component;</p>
+      <p class="content">ITweenPlayer DoScaleZ&lt;T&gt;(this T target, float z, AnimationCurve curve) where T : Component;</p>
+      <p class="content">ITweenPlayer DoScale&lt;T&gt;(this T target, Vector3 forwardValue, float duration = 1, bool relative = false) where T : Component;</p>
+      <p class="content">ITweenPlayer DoScale&lt;T&gt;(this T target, Vector3 forwardValue, AnimationCurve curve, bool relative = false) where T : Component;</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- GameObject target：</li>
+        <li style="padding-left: 15px">The UnityEngine.GameObject to animate. Any object with a Transform can be used.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- T target：</li>
+        <li style="padding-left: 15px">The component to animate. Any component with a Transform can be used.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 forwardValue：</li>
+        <li style="padding-left: 15px">The target scale value when playing forward.</li>
+        <li style="padding-left: 15px">Forward playback: current value → forwardValue.</li>
+        <li style="padding-left: 15px">Reverse playback: forwardValue → current value.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z：</li>
+        <li style="padding-left: 15px">The forward target value for scaling on the (x/y/z) axis.</li>
+        <li style="padding-left: 15px">Forward playback: current value → (x/y/z).</li>
+        <li style="padding-left: 15px">Reverse playback: (x/y/z) → current value.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoReveal</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">Utility methods for performing a typewriter-style animation that reveals text one character at a time.</h5>
+      <p class="content">ITweenPlayer DoReveal(this Text target, string text = null, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoReveal(this Text target, AnimationCurve curve, string text = null);</p>
+      <p class="content">ITweenPlayer DoReveal(this TMP_Text target, string text = null, float duration = 1);</p>
+      <p class="content">ITweenPlayer DoReveal(this TMP_Text target, AnimationCurve curve, string text = null);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- Text target：</li>
+        <li style="padding-left: 15px">The UnityEngine.UI.Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- TMP_Text target：</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text：</li>
+        <li style="padding-left: 15px">The text to append to the existing content.</li>
+        <li style="padding-left: 15px">The string to display using the typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoRichTextReveal</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">A utility method that performs a typewriter-style animation with Rich Text support.</h5>
+      <p class="content">IRichTextPlayer DoRichTextReveal(this TMP_Text target, string text = null, float duration = 1);</p>
+      <p class="content">IRichTextPlayer DoRichTextReveal(this TMP_Text target, AnimationCurve curve, string text = null);</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">TextMeshPro component.</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text：</li>
+        <li style="padding-left: 15px">The text to append to the existing content.</li>
+        <li style="padding-left: 15px">The string to display using the typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration：</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve：</li>
+        <li style="padding-left: 15px">A custom curve used to control the animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoRichTextRotateTween</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">Supports Rich Text and performs rotation animation on individual TextMeshPro characters.</h5>
+      <p class="content">IRichTextPlayer DoRichTextRotateTween(this TMP_Text target, float rotate, string text = null, float duration = 1);</p>
+      <p class="content">IRichTextPlayer DoRichTextRotateTween(this TMP_Text target, AnimationCurve curve, float rotate, string text = null);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target：</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float rotate：</li>
-        <li style="padding-left: 15px">Forward rotation angle.</li>
-        <li style="padding-left: 15px">Forward: 0 → rotate</li>
-        <li style="padding-left: 15px">Reverse: rotate → 0</li>
+        <li style="padding-left: 15px">The forward target rotation angle.</li>
+        <li style="padding-left: 15px">Forward playback: 0 → rotate.</li>
+        <li style="padding-left: 15px">Reverse playback: rotate → 0.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 15px">A custom curve used to control the animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoTextProSizeTween</span></h4>
+        <span class="title">DoRichTextSizeTween</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Animates TextMeshPro font size.</h5>
-      <p class="content">DoTextProSizeTween(this TMP_Text target, float fontsize, float duration = 1);</p>
-      <p class="content">DoTextProSizeTween(this TMP_Text target, float fontsize, AnimationCurve curve);</p>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">A feature that animates the font size of TextMeshPro text.</h5>
+      <p class="content">IRichTextPlayer DoRichTextSizeTween(this TMP_Text target, float fontsize, string text = null, float duration = 1);</p>
+      <p class="content">IRichTextPlayer DoRichTextSizeTween(this TMP_Text target, AnimationCurve curve, float fontsize, string text = null);</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">TextMeshPro component.</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float fontsize：</li>
-        <li style="padding-left: 15px">Forward target font size.</li>
-        <li style="padding-left: 15px">Forward: current → fontsize</li>
-        <li style="padding-left: 15px">Reverse: fontsize → current</li>
+        <li style="padding-left: 15px">The forward target font size value.</li>
+        <li style="padding-left: 15px">Forward playback: current fontsize → fontsize.</li>
+        <li style="padding-left: 15px">Reverse playback: fontsize → current fontsize.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 15px">A custom curve used to control the animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">DoTextProTween</span></h4>
+        <span class="title">DoRichTextTween</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Composite animation supporting typewriter, rotation, and font-size changes simultaneously.</h5>
-      <p class="content">DoTextProTween(this TMP_Text target, float duration = 1);</p>
-      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, float duration = 1);</p>
-      <p class="content">DoTextProTween(this TMP_Text target, float fontsize, float rotate, float duration = 1);</p>
-      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, float rotate, float duration = 1);</p>
-      <p class="content">DoTextProTween(this TMP_Text target, AnimationCurve curve);</p>
-      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, AnimationCurve curve);</p>
-      <p class="content">DoTextProTween(this TMP_Text target, float fontsize, float rotate, AnimationCurve curve);</p>
-      <p class="content">DoTextProTween(this TMP_Text target, string text, float fontsize, float rotate, AnimationCurve curve);</p>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">A composite text animation feature that supports Rich Text and can simultaneously perform typewriter animation, rotation, and font size changes.</h5>
+      <p class="content">IRichTextPlayer DoRichTextTween(this TMP_Text target, bool reveal = true, string text = null, bool sizetween = false, float fontsize = 0, bool rotatetween = false, float rotate = 0, float duration = 1);</p>
+      <p class="content">IRichTextPlayer DoRichTextTween(this TMP_Text target, AnimationCurve curve, bool reveal = true, string text = null, bool sizetween = false, float fontsize = 0, bool rotatetween = false, float rotate = 0);</p>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">TextMeshPro component.</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">Text to append and animate.</li>
+        <li style="padding-left: 15px">The text to append to the existing content.</li>
+        <li style="padding-left: 15px">The string to display using the typewriter animation.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float fontsize：</li>
-        <li style="padding-left: 15px">Forward target font size.</li>
-        <li style="padding-left: 15px">Forward: current → fontsize</li>
-        <li style="padding-left: 15px">Reverse: fontsize → current</li>
+        <li style="padding-left: 15px">The forward target font size value.</li>
+        <li style="padding-left: 15px">Forward playback: current fontsize → fontsize.</li>
+        <li style="padding-left: 15px">Reverse playback: fontsize → current fontsize.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float rotate：</li>
-        <li style="padding-left: 15px">Forward rotation angle.</li>
-        <li style="padding-left: 15px">Forward: 0 → rotate</li>
-        <li style="padding-left: 15px">Reverse: rotate → 0</li>
+        <li style="padding-left: 15px">The forward target rotation angle.</li>
+        <li style="padding-left: 15px">Forward playback: 0 → rotate.</li>
+        <li style="padding-left: 15px">Reverse playback: rotate → 0.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
         <li style="padding-left: 15px">Duration of the animation in seconds.</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">Custom animation curve.</li>
-        <li style="padding-left: 15px">When this is set, its time axis becomes the animation duration, and duration is ignored.</li>
+        <li style="padding-left: 15px">A custom curve used to control the animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshExplodeIn</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">A utility method that directly manipulates TextMeshPro vertex data to generate an animation where each character “explodes” outward individually.</h5>
+      <p class="content">IExplodeInPlayer DoMeshExplodeIn(this TMP_Text target, string text = null, float explosionPower = 200, bool fadeOut = true, float fadedelay = 0, bool rotate = true, float rotateMin = 50, float rotateMax = 500, bool useFloatiness = true, float factorMin = 0.02F, float factorMax = 0.15F, float duration = 1);</p>
+      <p class="content">IExplodeInPlayer DoMeshExplodeIn(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, bool fadeOut = true, float fadedelay = 0, bool rotate = true, float rotateMin = 50, float rotateMax = 500, bool useFloatiness = true, float factorMin = 0.02F, float factorMax = 0.15F);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing text.</li>
+        <li style="padding-left: 15px">The string to display with a typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float explosionPower:</li>
+        <li style="padding-left: 15px">The maximum explosion power reached during forward playback.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool fadeOut:</li>
+        <li style="padding-left: 15px">Whether to use a fade-out effect.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float fadedelay:</li>
+        <li style="padding-left: 15px">Delay before starting the fade-out.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool rotate:</li>
+        <li style="padding-left: 15px">Whether to apply rotation to characters.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float rotateMin / rotateMax:</li>
+        <li style="padding-left: 15px">Rotation angle range when rotation is enabled.</li>
+        <li style="padding-left: 15px">Each character rotates at a random angle between rotateMin and rotateMax.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool useFloatiness:</li>
+        <li style="padding-left: 15px">Whether to apply a floating (wobble) effect.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float factorMin / factorMax:</li>
+        <li style="padding-left: 15px">Range of floating intensity. Each character receives a random wobble between factorMin and factorMax.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshExplodeInFadeOut</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">A utility method that directly manipulates TextMeshPro vertex data to explode characters as independent meshes while simultaneously fading them out.</h5>
+      <p class="content">IExplodeInPlayer DoMeshExplodeInFadeOut(this TMP_Text target, string text = null, float explosionPower = 200, float delay = 0, float duration = 1);</p>
+      <p class="content">IExplodeInPlayer DoMeshExplodeInFadeOut(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, float delay = 0);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing text.</li>
+        <li style="padding-left: 15px">The string to display with a typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float explosionPower:</li>
+        <li style="padding-left: 15px">The maximum explosion power reached during forward playback.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float delay:</li>
+        <li style="padding-left: 15px">Delay before starting the fade-out.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshExplodeInFloatinessFadeOut</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">A utility method that directly manipulates TextMeshPro vertex data to scatter characters outward while giving them a floating motion and fading them out simultaneously.</h5>
+      <p class="content">IExplodeInPlayer DoMeshExplodeInFloatinessFadeOut(this TMP_Text target, string text = null, float explosionPower = 200, float fadedelay = 0, float factorMin = 0.02F, float factorMax = 0.15F, float duration = 1);</p>
+      <p class="content">IExplodeInPlayer DoMeshExplodeInFloatinessFadeOut(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, float fadedelay = 0, float factorMin = 0.02F, float factorMax = 0.15F);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing text.</li>
+        <li style="padding-left: 15px">The string to display with a typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float explosionPower:</li>
+        <li style="padding-left: 15px">The maximum explosion power reached during forward playback.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float fadedelay:</li>
+        <li style="padding-left: 15px">Delay before starting the fade-out.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float factorMin / factorMax:</li>
+        <li style="padding-left: 15px">Range of floating intensity. Each character receives a random wobble between factorMin and factorMax.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshExplodeInRotateFadeOut</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">A utility method that directly manipulates TextMeshPro vertex data to rotate characters individually, scatter them explosively, and fade them out.</h5>
+      <p class="content">IExplodeInPlayer DoMeshExplodeInRotateFadeOut(this TMP_Text target, string text = null, float explosionPower = 200, float fadedelay = 0, float rotateMin = 50, float rotateMax = 500, float duration = 1);</p>
+      <p class="content">IExplodeInPlayer DoMeshExplodeInRotateFadeOut(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, float fadedelay = 0, float rotateMin = 50, float rotateMax = 500);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing text.</li>
+        <li style="padding-left: 15px">The string to display with a typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float explosionPower:</li>
+        <li style="padding-left: 15px">The maximum explosion power reached during forward playback.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float fadedelay:</li>
+        <li style="padding-left: 15px">Delay before starting the fade-out.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float rotateMin / rotateMax:</li>
+        <li style="padding-left: 15px">Rotation angle range when rotation is enabled.</li>
+        <li style="padding-left: 15px">Each character rotates at a random angle between rotateMin and rotateMax.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshReveal</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">A utility method that directly manipulates TextMeshPro vertices to create complex character animations such as Fade / Scale / Move / Rotate / Wave / Bounce.</h5>
+      <p class="content">IRevealPlayer DoMeshReveal(this TMP_Text target, bool reveal = true, string text = null, bool fadetween = false, float alpha = 1, bool postween = false, Vector3 distance = default, bool scaletween = false, float scale = 1, bool rotatetween = false, Vector3 rotate = default, WaveType wavetype = WaveType.None, float frequency = 0, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshReveal(this TMP_Text target, AnimationCurve curve, bool reveal = true, string text = null, bool fadetween = false, float alpha = 1, bool postween = false, Vector3 distance = default, bool scaletween = false, float scale = 1, bool rotatetween = false, Vector3 rotate = default, WaveType wavetype = WaveType.None, float frequency = 0);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool reveal:</li>
+        <li style="padding-left: 15px">Whether to use the typewriter-style character reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing text.</li>
+        <li style="padding-left: 15px">The string to display with a typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool fadetween:</li>
+        <li style="padding-left: 15px">Whether to use fade animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float alpha:</li>
+        <li style="padding-left: 15px">Forward playback: alpha → 1.</li>
+        <li style="padding-left: 15px">Reverse playback: 1 → alpha.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool postween:</li>
+        <li style="padding-left: 15px">Whether to use movement animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 distance:</li>
+        <li style="padding-left: 15px">Forward playback: distance → Vector3.zero.</li>
+        <li style="padding-left: 15px">Reverse playback: Vector3.zero → distance.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool scaletween:</li>
+        <li style="padding-left: 15px">Whether to use scale animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float scale:</li>
+        <li style="padding-left: 15px">Forward playback: scale → 1.</li>
+        <li style="padding-left: 15px">Reverse playback: 1 → scale.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool rotatetween:</li>
+        <li style="padding-left: 15px">Whether to use rotation animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 rotate:</li>
+        <li style="padding-left: 15px">Forward playback: rotate → Vector3.zero.</li>
+        <li style="padding-left: 15px">Reverse playback: Vector3.zero → rotate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- WaveType wavetype:</li>
+        <li style="padding-left: 15px">None</li>
+        <li style="padding-left: 15px">Wavy</li>
+        <li style="padding-left: 15px">Bounce</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float frequency:</li>
+        <li style="padding-left: 15px">Frequency value used for Wavy / Bounce.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshFadeReveal</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">A utility method that directly manipulates TextMeshPro vertices to perform composite text effects centered around Fade + Reveal.</h5>
+      <p class="content">IRevealPlayer DoMeshFadeReveal(this TMP_Text target, float alpha = 0, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshFadeReveal(this TMP_Text target, AnimationCurve curve, float alpha = 0, bool reveal = true, string text = null);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool reveal:</li>
+        <li style="padding-left: 15px">Whether to use the typewriter-style character reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing text.</li>
+        <li style="padding-left: 15px">The string to display with a typewriter animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float alpha:</li>
+        <li style="padding-left: 15px">Forward playback: alpha → 1.</li>
+        <li style="padding-left: 15px">Reverse playback: 1 → alpha.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">Since the curve’s time axis becomes the animation duration, the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshMoveReveal / DoMeshMove(X/Y/Z)Reveal</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">Utility methods that directly manipulate TextMeshPro vertices to create animations combining Move (translation) + Reveal, with optional Wave / Bounce effects.</h5>
+      <p class="content">IRevealPlayer DoMeshMoveReveal(this TMP_Text target, Vector3 distance, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshMoveReveal(this TMP_Text target, Vector3 distance, AnimationCurve curve, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null);</p>
+      <p class="content">IRevealPlayer DoMeshMoveXReveal(this TMP_Text target, float x, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshMoveXReveal(this TMP_Text target, float x, AnimationCurve curve, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null);</p>
+      <p class="content">IRevealPlayer DoMeshMoveYReveal(this TMP_Text target, float y, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshMoveYReveal(this TMP_Text target, float y, AnimationCurve curve, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null);</p>
+      <p class="content">IRevealPlayer DoMeshMoveZReveal(this TMP_Text target, float z, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshMoveZReveal(this TMP_Text target, float z, AnimationCurve curve, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool reveal:</li>
+        <li style="padding-left: 15px">Whether to use the typewriter-style character reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing content.</li>
+        <li style="padding-left: 15px">The string to display using the typewriter reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 distance:</li>
+        <li style="padding-left: 15px">Forward playback: distance → Vector3.zero.</li>
+        <li style="padding-left: 15px">Reverse playback: Vector3.zero → distance.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z:</li>
+        <li style="padding-left: 15px">Forward playback: (x/y/z) → 0.</li>
+        <li style="padding-left: 15px">Reverse playback: 0 → (x/y/z).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- WaveType wavetype:</li>
+        <li style="padding-left: 15px">None</li>
+        <li style="padding-left: 15px">Wavy</li>
+        <li style="padding-left: 15px">Bounce</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float frequency:</li>
+        <li style="padding-left: 15px">Frequency value used when Wavy / Bounce is enabled.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">The curve’s time axis directly defines the animation duration, so the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshRotateReveal / DoMeshRotate(X/Y/Z)Reveal</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">Utility methods that directly manipulate TextMeshPro vertices to create animations combining Rotate + Reveal.</h5>
+      <p class="content">IRevealPlayer DoMeshRotateReveal(this TMP_Text target, Vector3 rotate, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshRotateReveal(this TMP_Text target, Vector3 rotate, AnimationCurve curve, bool reveal = true, string text = null);</p>
+      <p class="content">IRevealPlayer DoMeshRotateXReveal(this TMP_Text target, float x, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshRotateXReveal(this TMP_Text target, float x, AnimationCurve curve, bool reveal = true, string text = null);</p>
+      <p class="content">IRevealPlayer DoMeshRotateYReveal(this TMP_Text target, float y, AnimationCurve curve, bool reveal = true, string text = null);</p>
+      <p class="content">IRevealPlayer DoMeshRotateYReveal(this TMP_Text target, float y, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshRotateZReveal(this TMP_Text target, float z, bool reveal = true, string text = null, float duration = 1);</p>
+      <p class="content">IRevealPlayer DoMeshRotateZReveal(this TMP_Text target, float z, AnimationCurve curve, bool reveal = true, string text = null);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool reveal:</li>
+        <li style="padding-left: 15px">Whether to use the typewriter-style character reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing content.</li>
+        <li style="padding-left: 15px">The string to display using the typewriter reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- Vector3 rotate:</li>
+        <li style="padding-left: 15px">Forward playback: rotate → Vector3.zero.</li>
+        <li style="padding-left: 15px">Reverse playback: Vector3.zero → rotate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float x / y / z:</li>
+        <li style="padding-left: 15px">Forward playback: (x/y/z) → 0.</li>
+        <li style="padding-left: 15px">Reverse playback: 0 → (x/y/z).</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">The curve’s time axis directly defines the animation duration, so the duration parameter is ignored.</li>
+      </ul></div>
+
+      <div class="accordion">
+        <h4 class="title"><span class="arrow">▶</span>
+        <span class="title">DoMeshScaleReveal</span></h4>
+      </div>
+      <div class="panel">
+      <h5 class="title">Utility methods that directly manipulate TextMeshPro vertices to create animations combining Scale + Reveal.</h5>
+      <p class="content">IRevealPlayer DoMeshScaleReveal(this TMP_Text target, AnimationCurve curve, float scale = 0, bool reveal = true, string text = null);</p>
+      <p class="content">IRevealPlayer DoMeshScaleReveal(this TMP_Text target, float scale = 0, bool reveal = true, string text = null, float duration = 1);</p>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- TMP_Text target:</li>
+        <li style="padding-left: 15px">The TMPPro.TMP_Text component to animate.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- bool reveal:</li>
+        <li style="padding-left: 15px">Whether to use the typewriter-style character reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- string text:</li>
+        <li style="padding-left: 15px">Text to append to the existing content.</li>
+        <li style="padding-left: 15px">The string to display using the typewriter reveal animation.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float scale:</li>
+        <li style="padding-left: 15px">Forward playback: scale → 1.</li>
+        <li style="padding-left: 15px">Reverse playback: 1 → scale.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- float duration:</li>
+        <li style="padding-left: 15px">Duration of the animation in seconds.</li>
+        <li >&nbsp</li>
+        <li style="padding-left: 2px">- AnimationCurve curve:</li>
+        <li style="padding-left: 15px">Custom curve used to control animation progression.</li>
+        <li style="padding-left: 15px">The curve’s time axis directly defines the animation duration, so the duration parameter is ignored.</li>
       </ul></div>
 
       <div class="accordion">
@@ -606,21 +1164,21 @@
       </div>
       <div class="panel">
       <h5 class="title">Animation system for moving objects along a multi-point curve (path).</h5>
-      <p class="content">SetClosed(bool closed); </p>
+      <p class="content">IPathPlayer SetClosed(bool closed); </p>
       <ul class="content">
         <li style="padding-left: 15px">Whether to connect the start and end points.</li>
       </ul>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- bool closed：</li>
         <li style="padding-left: 15px">true: closed loop</li>
         <li style="padding-left: 15px">false: open curve</li>
       </ul>
-      <p class="content">SetLookMode(PathLookMode lookmode);</p>
+      <p class="content">IPathPlayer SetLookMode(PathLookMode lookmode);</p>
       <ul class="content">
         <li style="padding-left: 15px">Controls the facing direction of the moving object.</li>
       </ul>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- PathLookMode lookmode：</li>
         <li style="padding-left: 15px">None: keep current rotation</li>
@@ -628,25 +1186,25 @@
         <li style="padding-left: 15px">Right: face +X relative to path direction</li>
         <li style="padding-left: 15px">Left: face –X relative to path direction</li>
       </ul>
-      <p class="content">SetPoints(List<Vector3> vectors);</p>
+      <p class="content">IPathPlayer SetPoints(List<Vector3> vectors);</p>
       <ul class="content">
         <li style="padding-left: 15px">Sets the control points of the path.</li>
       </ul>
-      <p class="content">SetTarget(Transform target);</p>
+      <p class="content">IPathPlayer SetTarget(Transform target);</p>
       <ul class="content">
         <li style="padding-left: 15px">Sets the object to move along the path.</li>
       </ul>
-      <p class="content">SetUseLocalPosition(bool uselocal);</p>
+      <p class="content">IPathPlayer SetUseLocalPosition(bool uselocal);</p>
       <ul class="content">
         <li style="padding-left: 15px">Whether to use local coordinates.</li>
       </ul>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- bool uselocal：</li>
         <li style="padding-left: 15px">true: use local position</li>
         <li style="padding-left: 15px">false: use world position</li>
       </ul>
-      <p class="content">SnapTargetToFirstPoint();</p>
+      <p class="content">IPathPlayer SnapTargetToFirstPoint();</p>
       <ul class="content">
         <li style="padding-left: 15px">Moves the target to the first point</li>
       </ul></div>
@@ -656,50 +1214,50 @@
         <span class="title">CurveTween Settings</span></h4>
       </div>
       <div class="panel">
-      <p class="content">SetDelay(float delay);</p>
+      <p class="content">iTweenPlayer SetDelay(float delay);</p>
       <ul class="content">
         <li style="padding-left: 15px">Delay before animation starts.</li>
       </ul>
-      <p class="content">SetDuration(float duration);</p>
+      <p class="content">iTweenPlayer SetDuration(float duration);</p>
       <ul class="content">
         <li style="padding-left: 15px">Animation duration in seconds.</li>
       </ul>
-      <p class="content">SetEase(EaseType easeType);</p>
+      <p class="content">iTweenPlayer SetEase(EaseType easeType);</p>
       <ul class="content">
         <li style="padding-left: 15px">Sets normalized 0–1 easing curve.</li>
       </ul>
-      <p class="content">SetLoop(bool loop);</p>
+      <p class="content">iTweenPlayer SetLoop(bool loop);</p>
       <ul class="content">
         <li style="padding-left: 15px">Whether to loop the animation.</li>
       </ul>
-      <p class="content">SetLoopCount(int loopCount);</p>
+      <p class="content">iTweenPlayer SetLoopCount(int loopCount);</p>
       <ul class="content">
         <li style="padding-left: 15px">Number of loops.</li>
       </ul>
-      <p class="content">SetLoopDelay(bool loopDelay);</p>
+      <p class="content">iTweenPlayer SetLoopDelay(bool loopDelay);</p>
       <ul class="content">
         <li style="padding-left: 15px">Whether to apply delay on loops.</li>
       </ul>
-      <p class="content">SetLoopType(LoopType loopType);</p>
+      <p class="content">iTweenPlayer SetLoopType(LoopType loopType);</p>
       <ul class="content">
         <li style="padding-left: 15px">Loop behavior</li>
       </ul>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- LoopType loopType：</li>
         <li style="padding-left: 15px">Resart</li>
         <li style="padding-left: 15px">YoYo</li>
         <li style="padding-left: 15px">Increment</li>
       </ul>
-      <p class="content">SetScaledTime(bool scaledtime);</p>
+      <p class="content">iTweenPlayer SetScaledTime(bool scaledtime);</p>
       <ul class="content">
         <li style="padding-left: 15px">Whether to use Time.timeScale.</li>
       </ul>
-      <p class="content">SetYoYoDelay(float yoYoDelay);</p>
+      <p class="content">iTweenPlayer SetYoYoDelay(float yoYoDelay);</p>
       <ul class="content">
         <li style="padding-left: 15px">Delay before reverse motion in YoYo mode.</li>
       </ul>
-      <p class="content">SetValue(object value);</p>
+      <p class="content">ITweenPlayerSetValue(object value);</p>
       <ul class="content">
         <li style="padding-left: 15px">Resets target or forwardValue before animation.</li>
         <li style="padding-left: 15px">CanvasGroup / Graphic / Material / Transform / Text / TMP_Text / Vector3 / String / float etc.</li>
@@ -715,7 +1273,7 @@
       <ul class="content">
         <li style="padding-left: 15px">Starts animation.</li>
       </ul>
-      <h5 class="title">・Parameters</h5>
+      <h5 class="title">• Parameters</h5>
       <ul class="content">
         <li style="padding-left: 2px">- bool reversePlay：</li>
         <li style="padding-left: 15px">reversePlay = true → play backward</li>
@@ -742,15 +1300,15 @@
         <span class="title">Event Callbacks</span></h4>
       </div>
       <div class="panel">
-      <p class="content">void AddOnStartListener(UnityAction call);</p>
+      <p class="content">iTweenPlayer AddOnStartListener(UnityAction call);</p>
       <ul class="content">
         <li style="padding-left: 15px">Called when animation starts.</li>
       </ul>
-      <p class="content">void AddOnYoYoListener(UnityAction call);</p>
+      <p class="content">iTweenPlayer AddOnYoYoListener(UnityAction call);</p>
       <ul class="content">
         <li style="padding-left: 15px">Called when reaching 1.0 in YoYo mode.</li>
       </ul>
-      <p class="content">void AddOnCompleteListener(UnityAction call);</p>
+      <p class="content">iTweenPlayer AddOnCompleteListener(UnityAction call);</p>
       <ul class="content">
         <li style="padding-left: 15px">Called when animation completes (non-looping).</li>
       </ul></div>
@@ -761,7 +1319,7 @@
       </div>
       <div class="panel">
       <h5 class="title">Generates a Keyframe curve based on EaseType.</h5>
-      <p class="content">Keyframe[] GetAnimationCurve(EaseType easeType);</p></div>
+      <p class="content">Keyframe[] CurveTweenUtility.GetAnimationCurve(EaseType easeType);</p></div>
     </div>
 
     <script>
