@@ -129,7 +129,7 @@
       <p class="content">Creates a typewriter-style text animation.</p>
       <h5 class="title">• Example</h5>
       <ul class="content">
-        <li>target.DoTextTypewriter()</li>
+        <li>target.DoReveal()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
@@ -140,10 +140,10 @@
         <span class="title">RichText (TextMeshPro)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Supports rich text, typing-style animations, rotation animations, and font-size scaling animations.</p>
+      <p class="content">Supports rich text, typing-style animations, rotation animations, and font-size scaling animations.(Be aware that it has high GC overhead, which may impact performance.)</p>
       <h5 class="title">• Example</h5>
       <ul class="content">
-        <li>target.DoTextProTypewriter()</li>
+        <li>target.DoRichTextReveal()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
@@ -1289,6 +1289,16 @@
       <p class="content">void Stop();</p>
       <ul class="content">
         <li style="padding-left: 15px">Stops animation.</li>
+      </ul>
+      <p class="content">void ForceEnd(bool invokeCallback);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">ForceEnd is a method that immediately terminates the process, bypassing the normal termination flow.</li>
+      </ul>
+      <h5 class="title">• Parameters</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- bool invokeCallback：</li>
+        <li style="padding-left: 15px">true：Executes the completion callback after the forced termination.</li>
+        <li style="padding-left: 15px">false：Does not execute the completion callback.</li>
       </ul>
       <p class="content">void StopAndReset();</p>
       <ul class="content">

@@ -140,7 +140,7 @@
         <span class="title">RichText (TextMeshPro)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">リッチテキストに対応し、タイピング風アニメーション、回転アニメーション、フォントサイズの拡大縮小アニメーションをサポートします。</p>
+      <p class="content">リッチテキストに対応し、タイピング風アニメーション、回転アニメーション、フォントサイズの拡大縮小アニメーションをサポートします。(ただし GC 負荷が高い 点に注意が必要です)</p>
       <h5 class="title">• 使用例</h5>
       <ul class="content">
         <li>target.DoRichTextReveal()</li>
@@ -1317,6 +1317,16 @@
       <p class="content">void Stop();</p>
       <ul class="content">
         <li style="padding-left: 15px">再生中または逆再生中のアニメーションを停止します。</li>
+      </ul>
+      <p class="content">void ForceEnd(bool invokeCallback);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">ForceEnd は、通常の終了フローを無視して即座に処理を終わらせるためのメソッド。</li>
+      </ul>
+      <h5 class="title">• パラメータ</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- bool invokeCallback：</li>
+        <li style="padding-left: 15px">true：強制終了後に 完了コールバックを実行する。</li>
+        <li style="padding-left: 15px">false：完了コールバックを実行しない。</li>
       </ul>
       <p class="content">void StopAndReset();</p>
       <ul class="content">

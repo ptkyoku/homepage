@@ -129,7 +129,7 @@
       <p class="content">实现打字机风格的文字动画。</p>
       <h5 class="title">• 使用示例</h5>
       <ul class="content">
-        <li>target.DoTextTypewriter()</li>
+        <li>target.DoReveal()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
@@ -140,10 +140,10 @@
         <span class="title">RichText (TextMeshPro)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">支持富文本、打字效果动画、旋转动画以及字体大小缩放动画。</p>
+      <p class="content">支持富文本、打字效果动画、旋转动画以及字体大小缩放动画。(需要注意的是，它的 GC 开销较高，可能会影响性能。)</p>
       <h5 class="title">• 使用示例</h5>
       <ul class="content">
-        <li>target.DoTextProTypewriter()</li>
+        <li>target.DoRichTextReveal()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
@@ -1289,6 +1289,16 @@
       <p class="content">void Stop();</p>
       <ul class="content">
         <li style="padding-left: 15px">停止当前动画。</li>
+      </ul>
+      <p class="content">void ForceEnd(bool invokeCallback);</p>
+      <ul class="content">
+        <li style="padding-left: 15px">ForceEnd 方法用于跳过正常的结束流程，立即终止处理。</li>
+      </ul>
+      <h5 class="title">• 参数</h5>
+      <ul class="content">
+        <li style="padding-left: 2px">- bool invokeCallback：</li>
+        <li style="padding-left: 15px">true：强制结束后执行完成回调。</li>
+        <li style="padding-left: 15px">false：不执行完成回调。</li>
       </ul>
       <p class="content">void StopAndReset();</p>
       <ul class="content">
