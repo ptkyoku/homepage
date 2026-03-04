@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CurveTween</title>
-    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../../style.css" />
     <link rel="icon" type="image/x-icon" href="./img/ptx_logo_108x108.png">
   </head>
   <body>
@@ -15,34 +15,34 @@
       <nav class="nav">
         <ul class="item">
           <li class="list">
-            <a href="https://ptkyoku.github.io/homepage/doc/curvetween_en.html">EN</a>
+            <a href="https://ptkyoku.github.io/homepage/doc/ct/ctween_en.html">EN</a>
           </li>
           <li class="list">
-            <a href="#" class="title01">JP</a>
+            <a href="https://ptkyoku.github.io/homepage/doc/ct/ctween_jp.html">JP</a>
           </li>
           <li class="list">
-            <a href="https://ptkyoku.github.io/homepage/doc/curvetween_cn.html">CN</a>
+            <a href="#" class="title01">CN</a>
           </li>
           <li class="list">
-            <a href="https://ptkyoku.github.io/homepage/doc/curvetween_ko.html">KO</a>
+            <a href="https://ptkyoku.github.io/homepage/doc/ct/ctween_ko.html">KO</a>
           </li>
         </ul>
       </nav>
     </header>
 
     <div class="box-home">
-      <h2 class="title">CurveTween ドキュメント</h2>
+      <h2 class="title">CurveTween 文档</h2>
     </div>
     <div class="box-home">
-      <h3 class="title"><p class="title">機能一覧 (Features)</p></h3>
+      <h3 class="title"><p class="title">功能列表</p></h3>
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">Fade（フェード)</span></h4>
+        <span class="title">Fade（淡入淡出)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">オブジェクトの透明度（Alpha）をアニメーションします。</p>
-      <h5 class="title">• 対象</h5>
+      <p class="content">对对象的透明度（Alpha）进行动画处理。</p>
+      <h5 class="title">• 支持的组件</h5>
       <ul class="content">
         <li style="padding-left: 2px">- SpriteRenderer</li>
         <li style="padding-left: 2px">- Image</li>
@@ -50,9 +50,9 @@
         <li style="padding-left: 2px">- Text/TextMeshPro</li>
         <li style="padding-left: 2px">- Material（Color の Alpha）</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
-        <li>target.DoFade(float)</li>
+        <li>target.DoFade(1f)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
@@ -60,11 +60,11 @@
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">Move（移動)</span></h4>
+        <span class="title">Move（移动)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Transform の位置をアニメーションします。</p>
-      <h5 class="title">• 使用例</h5>
+      <p class="content">对 Transform 的位置进行动画处理。</p>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoMove(position)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -74,11 +74,11 @@
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">Scale（拡大縮小)</span></h4>
+        <span class="title">Scale（缩放)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Transform のスケールをアニメーションします。</p>
-      <h5 class="title">• 使用例</h5>
+      <p class="content">对 Transform 的缩放进行动画处理。</p>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoScale(scale)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -88,11 +88,11 @@
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">Rotate（回転)</span></h4>
+        <span class="title">Rotate（旋转)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Transform の回転をアニメーションします。</p>
-      <h5 class="title">• 使用例</h5>
+      <p class="content">对 Transform 的旋转进行动画处理。</p>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoRotation(rotate)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -102,18 +102,18 @@
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
-        <span class="title">Color（カラー)</span></h4>
+        <span class="title">Color（颜色)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">色（Color）をアニメーションします。</p>
-      <h5 class="title">• 対象</h5>
+      <p class="content">对颜色（Color）进行动画处理。</p>
+      <h5 class="title">• 支持的组件</h5>
       <ul class="content">
         <li style="padding-left: 2px">- SpriteRenderer</li>
         <li style="padding-left: 2px">- Image</li>
         <li style="padding-left: 2px">- Text/TextMeshPro</li>
         <li style="padding-left: 2px">- Material（Color）</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoColor(color)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -126,8 +126,8 @@
         <span class="title">Text（UI Text/TextMeshPro）</span></h4>
       </div>
       <div class="panel">
-      <p class="content">テキストのタイピング風アニメーションします。</p>
-      <h5 class="title">• 使用例</h5>
+      <p class="content">实现打字机风格的文字动画。</p>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoReveal()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -140,19 +140,12 @@
         <span class="title">RichText (TextMeshPro)</span></h4>
       </div>
       <div class="panel">
-      <p class="content">リッチテキストに対応し、タイピング風アニメーション、回転アニメーション、フォントサイズの拡大縮小アニメーションをサポートします。(ただし GC 負荷が高い 点に注意が必要です)</p>
-      <h5 class="title">• 使用例</h5>
+      <p class="content">支持富文本、打字效果动画、旋转动画以及字体大小缩放动画。(需要注意的是，它的 GC 开销较高，可能会影响性能。)</p>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoRichTextReveal()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
-        <li style="padding-left: 38px">.Play();</li>
-      </ul>
-      <h5 class="title">• 使用例</h5>
-      <ul class="content">
-        <li>target.DoRichTextTween(duration: 1.5f).SetText(text).SetReveal(false)</li>
-        <li style="padding-left: 38px">.SetFontSizeTween(true).SetValue(fontsize)</li>
-        <li style="padding-left: 38px">.SetRotateTween(true).SetValue(rot)</li>
         <li style="padding-left: 38px">.Play();</li>
       </ul></div>
 
@@ -161,16 +154,16 @@
         <span class="title">Light</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Unity Light コンポーネントの各種プロパティをアニメーションします。</p>
-      <h5 class="title">• 対象</h5>
+      <p class="content">对 Unity Light 组件的属性进行动画处理。</p>
+      <h5 class="title">• 支持的属性</h5>
       <ul class="content">
         <li style="padding-left: 2px">- color</li>
         <li style="padding-left: 2px">- intensity</li>
         <li style="padding-left: 2px">- range</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
-        <li>target.DoIntensity(float)</li>
+        <li>target.DoLight(color, intensity, range)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
@@ -181,13 +174,13 @@
         <span class="title">FillAmount</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Image コンポーネントの fillAmount をアニメーションさせる機能です。
-      ゲージ • クールダウン • 円形ロードなど、UI 表現に利用できます。</p>
-      <h5 class="title">• 対象</h5>
+      <p class="content">用于为 Image 组件的 fillAmount 值制作动画的功能。
+      可用于血条、冷却时间、圆形加载等 UI 表现。</p>
+      <h5 class="title">• 目标对象</h5>
       <ul class="content">
-        <li style="padding-left: 2px">- Image（Filled タイプ）</li>
+        <li style="padding-left: 2px">- Image（Filled 类型）</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoFillAmount(float)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -200,13 +193,13 @@
         <span class="title">IntInterpolate / FloatInterpolate</span></h4>
       </div>
       <div class="panel">
-      <p class="content">Text / TextMeshPro の数値を補間しながらアニメーション表示する機能です。
-      カウントアップ、ダメージ数値、スコア演出などに最適です。</p>
-      <h5 class="title">• 対象</h5>
+      <p class="content">用于在 Text / TextMeshPro 中对数值进行插值动画的功能。
+      适用于数字增长、伤害数字、分数动画等效果。</p>
+      <h5 class="title">• 目标对象</h5>
       <ul class="content">
-        <li style="padding-left: 2px">- Text/TextMeshPro</li>
+        <li style="padding-left: 2px">- Text / TextMeshPro</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>target.DoInterpolate(int/float)</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
@@ -219,20 +212,20 @@
         <span class="title">TMPMeshExplodeInAnimation</span></h4>
       </div>
       <div class="panel">
-      <p class="content">TextMeshPro の頂点データを直接操作し、文字を個別に爆発させるアニメーションです。
-      速度 • 方向 • 拡散度 • ランダム性などを細かく制御でき、派手な演出に向いています。</p>
-      <h5 class="title">• 対象</h5>
+      <p class="content">直接操作 TextMeshPro 顶点数据，使每个字符单独爆炸的动画。
+      可细致控制速度、方向、扩散度、随机性等，非常适合华丽的特效。</p>
+      <h5 class="title">• 目标对象</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TextMeshPro</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>path.DoMeshExplodeIn()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>path.DoMeshExplodeIn()</li>
         <li style="padding-left: 38px">.SetExplosionPower(power)</li>
@@ -247,21 +240,21 @@
         <span class="title">TMPMeshRevealAnimation</span></h4>
       </div>
       <div class="panel">
-      <p class="content">TextMeshPro の頂点を直接操作し、以下の複合的な文字演出を実現するアニメーションです。
-        Fade（透明度）、Character Scale（文字スケール）、Rotate（回転）、Move（移動）、Wave（波形変形）、Bounce（バウンス変形）、
-      タイプライター風の演出から、動きのある複雑な文字アニメーションまで幅広く対応します。</p>
-      <h5 class="title">• 対象</h5>
+      <p class="content">直接操作 TextMeshPro 顶点，实现以下复杂的文字动画效果：
+        透明度（Fade）、字符缩放（Scale）、旋转（Rotate）、移动（Move）、波形变形（Wave）、弹跳变形（Bounce）。
+      从打字机效果到动态复杂的文字动画都能实现。</p>
+      <h5 class="title">• 目标对象</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TextMeshPro</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>path.DoMeshReveal()</li>
         <li style="padding-left: 38px">.SetEase(EaseType.EaseOutCubic)</li>
         <li style="padding-left: 38px">.SetLoopType(LoopType.YoYo)</li>
         <li style="padding-left: 38px">.Play();</li>
       </ul>
-      <h5 class="title">• 使用例</h5>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>path.DoMeshReveal()</li>
         <li style="padding-left: 38px">.SetFadeTween(true).SetValue(alpha)</li>
@@ -277,8 +270,8 @@
         <span class="title">PathCurveAnimation</span></h4>
       </div>
       <div class="panel">
-      <p class="content">PathCurveAnimation は、複数のポイントで構成されたカーブ（パス）に沿って対象オブジェクトを移動させるアニメーション機能です。</p>
-      <h5 class="title">• 使用例</h5>
+      <p class="content">沿由多个点组成的曲线（路径）移动目标对象。</p>
+      <h5 class="title">• 使用示例</h5>
       <ul class="content">
         <li>path.SetTarget(target)</li>
         <li style="padding-left: 38px">.SnapTargetToFirstPoint()</li>
@@ -287,45 +280,45 @@
 
     </div>
     <div class="box-home">
-      <h3 class="title" ><p class="title">APIリファレンス</p></h3>
+      <h3 class="title" ><p class="title">API 参考文档</p></h3>
 
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
         <span class="title">DoCanvasFade</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">CanvasGroupの alpha をアニメーションさせるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于为 CanvasGroup 的 alpha 值播放动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoCanvasFade(this GameObject target, float forwardValue = 0, bool blocksraycasts = false, float duration = 1);</p>
       <p class="content">ITweenPlayer DoCanvasFade(this GameObject target, AnimationCurve curve, float forwardValue = 0, bool blocksraycasts = false);</p>
       <p class="content">ITweenPlayer DoCanvasFade(this MonoBehaviour target, float forwardValue = 0, bool blocksraycasts = false, float duration = 1);</p>
       <p class="content">ITweenPlayer DoCanvasFade(this MonoBehaviour target, AnimationCurve curve, float forwardValue = 0, bool blocksraycasts = false);</p>
       <p class="content">ITweenPlayer DoCanvasFade(this CanvasGroup target, float forwardValue = 0, bool blocksraycasts = false, float duration = 1);</p>
       <p class="content">ITweenPlayer DoCanvasFade(this CanvasGroup target, AnimationCurve curve, float forwardValue = 0, bool blocksraycasts = false);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- GameObject target：</li>
-        <li style="padding-left: 15px">フェード対象となる UnityEngine.GameObject。CanvasGroupがアタッチされていない場合は、自動的に追加して使用します。</li>
+        <li style="padding-left: 15px">要进行淡入淡出的 UnityEngine.GameObject。若未挂载 CanvasGroup，则会自动添加并使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- MonoBehaviour target：</li>
-        <li style="padding-left: 15px">フェード対象となるコンポーネント。 CanvasGroupがアタッチされていない場合は、自動的に追加して使用します。</li>
+        <li style="padding-left: 15px">要进行淡入淡出的组件。如果未挂载 CanvasGroup，将自动添加并使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- CanvasGroup target：</li>
-        <li style="padding-left: 15px">フェード対象となる CanvasGroup コンポーネント。</li>
+        <li style="padding-left: 15px">要进行淡入淡出的 CanvasGroup 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float forwardValue：</li>
-        <li style="padding-left: 15px">アニメーションする際のforward 到達アルファ値（0〜1）。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：- 現在の alpha → forwardValue に向かってフェードします。</li>
-        <li style="padding-left: 15px">逆再生時：forwardValue → 現在の alpha に向かってフェードします。</li>
+        <li style="padding-left: 15px">正向动画时的目标 alpha 值（0〜1）。</li>
+        <li style="padding-left: 15px">正向播放：当前 alpha → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前 alpha。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool blocksraycasts：</li>
-        <li style="padding-left: 15px">CanvasGroup.blocksRaycasts を設定するかどうか。</li>
+        <li style="padding-left: 15px">是否设置 CanvasGroup.blocksRaycasts。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -333,35 +326,35 @@
         <span class="title">DoFade</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">対象オブジェクトの alpha をアニメーションさせるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于为目标对象的 alpha 值播放动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoFade(this Material target, float forwardValue = 0, float duration = 1);</p>
       <p class="content">ITweenPlayer DoFade(this Renderer target, float forwardValue = 0, float duration = 1);</p>
       <p class="content">ITweenPlayer DoFade(this Graphic target, float forwardValue = 0, float duration = 1);</p>
       <p class="content">ITweenPlayer DoFade(this Renderer target, AnimationCurve curve, float forwardValue = 0);</p>
       <p class="content">ITweenPlayer DoFade(this Graphic target, AnimationCurve curve, float forwardValue = 0);</p>
       <p class="content">ITweenPlayer DoFade(this Material target, AnimationCurve curve, float forwardValue = 0);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Graphic target：</li>
-        <li style="padding-left: 15px">フェード対象となる Graphicコンポネント。</li>
+        <li style="padding-left: 15px">要进行淡入淡出的 Graphic 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Renderer target：</li>
-        <li style="padding-left: 15px">フェード対象となる Rendererコンポネント。</li>
+        <li style="padding-left: 15px">要进行淡入淡出的 Renderer 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Material target：</li>
-        <li style="padding-left: 15px">フェード対象となる Materialインスタンス。</li>
+        <li style="padding-left: 15px">要进行淡入淡出的 Material 实例。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float forwardValue：</li>
-        <li style="padding-left: 15px">アニメーションする際のforward 到達アルファ値（0〜1）。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：- 現在の color.a → forwardValue に向かってフェードします。</li>
-        <li style="padding-left: 15px">逆再生時：forwardValue → 現在の color.a に向かってフェードします。</li>
+        <li style="padding-left: 15px">正向动画时的目标 alpha 值（0〜1）。</li>
+        <li style="padding-left: 15px">正向播放：当前 color.a → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前 color.a。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -369,35 +362,35 @@
         <span class="title">DoColor</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">対象オブジェクトの Color をアニメーションさせるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于为目标对象的 Color 播放动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoColor(this Graphic target, Color forwardValue, float duration = 1);</p>
       <p class="content">ITweenPlayer DoColor(this Graphic target, Color forwardValue, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoColor(this Renderer target, Color forwardValue, float duration = 1);</p>
       <p class="content">ITweenPlayer DoColor(this Renderer target, Color forwardValue, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoColor(this Material target, Color forwardValue, float duration = 1);</p>
       <p class="content">ITweenPlayer DoColor(this Material target, Color forwardValue, AnimationCurve curve);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Graphic target：</li>
-        <li style="padding-left: 15px">フェード対象となる Graphicコンポネント。</li>
+        <li style="padding-left: 15px">要进行颜色动画的 Graphic 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Renderer target：</li>
-        <li style="padding-left: 15px">フェード対象となる Rendererコンポネント。</li>
+        <li style="padding-left: 15px">要进行颜色动画的 Renderer 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Material target：</li>
-        <li style="padding-left: 15px">フェード対象となる Materialインスタンス。</li>
+        <li style="padding-left: 15px">要进行颜色动画的 Material 实例。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Color forwardValue：</li>
-        <li style="padding-left: 15px">アニメーションする際のforward 到達Color値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：- 現在の color → forwardValue。</li>
-        <li style="padding-left: 15px">逆再生時：forwardValue → 現在の color。</li>
+        <li style="padding-left: 15px">正向动画时的目标颜色值。</li>
+        <li style="padding-left: 15px">正向播放：当前 color → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前 color。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -405,26 +398,26 @@
         <span class="title">DoFillAmount</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">DoFillAmount は、UnityEngine.UI.Image の fillAmount をスムーズにアニメーションさせるための拡張メソッドです。</h5>
+      <h5 class="title">DoFillAmount 是一个扩展方法，用于平滑地为 UnityEngine.UI.Image 的 fillAmount 播放动画。</h5>
       <p class="content">ITweenPlayer DoFillAmount(this Image target, float forwardValue = 0, float duration = 1);</p>
       <p class="content">ITweenPlayer DoFillAmount(this Image target, AnimationCurve curve, float forwardValue = 0);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Image target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる Image コンポーネント。</li>
-        <li style="padding-left: 15px">fillAmount プロパティを持つ Image（Filled タイプ）である必要があります。</li>
+        <li style="padding-left: 15px">要进行动画的 Image 组件。</li>
+        <li style="padding-left: 15px">必须是支持 fillAmount 属性的 Filled 类型 Image。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float forwardValue：</li>
-        <li style="padding-left: 15px">アニメーションする際のforward 到達値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：- 現在値 → forwardValue。</li>
-        <li style="padding-left: 15px">逆再生時：forwardValue → 現在値。</li>
+        <li style="padding-left: 15px">正向动画时的目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -432,7 +425,7 @@
         <span class="title">DoLight / DoIntensity / DoRange</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Light コンポーネントの color、intensity、range をアニメーションさせるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于为 Light 组件的 color、intensity、range 播放动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoColor(this Light target, Color color, float duration = 1);</p>
       <p class="content">ITweenPlayer DoColor(this Light target, Color color, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoIntensity(this Light target, float intensity, float duration = 1);</p>
@@ -441,41 +434,41 @@
       <p class="content">ITweenPlayer DoRange(this Light target, float range, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoLight(this Light target, bool colortween = false, Color color = default, bool intensitytween = false, float intensity = 0, bool rangetween = false, float range = 0, float duration = 1);</p>
       <p class="content">ITweenPlayer DoLight(this Light target, AnimationCurve curve, bool colortween = false, Color color = default, bool intensitytween = false, float intensity = 0, bool rangetween = false, float range = 0);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Light target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる UnityEngine.Light コンポーネント。</li>
+        <li style="padding-left: 15px">要进行动画的 UnityEngine.Light 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool colortween：</li>
-        <li style="padding-left: 15px">カラーアニメーションするかどうか</li>
+        <li style="padding-left: 15px">是否进行颜色动画。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Color color：</li>
-        <li style="padding-left: 15px">Light の color をアニメーションする際のforward 到達値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在の target.color → color。</li>
-        <li style="padding-left: 15px">逆再生時：color → 現在の target.color。</li>
+        <li style="padding-left: 15px">Light.color 在 forward 播放时的目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前 target.color → color。</li>
+        <li style="padding-left: 15px">反向播放：color → 当前 target.color。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool intensitytween：</li>
-        <li style="padding-left: 15px">Intensityアニメーションするかどうか</li>
+        <li style="padding-left: 15px">是否进行 Intensity 动画。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float intensity：</li>
-        <li style="padding-left: 15px">Light の intensity（明るさ）の forward 到達値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → intensity。</li>
-        <li style="padding-left: 15px">逆再生：intensity → 現在値。</li>
+        <li style="padding-left: 15px">Light intensity（亮度）的 forward 目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → intensity。</li>
+        <li style="padding-left: 15px">反向播放：intensity → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool rangetween：</li>
-        <li style="padding-left: 15px">Rangeアニメーションするかどうか</li>
+        <li style="padding-left: 15px">是否进行 Range 动画。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float range：</li>
-        <li style="padding-left: 15px">Light の range（照射範囲）の forward 到達値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → range。</li>
-        <li style="padding-left: 15px">逆再生：range → 現在値。</li>
+        <li style="padding-left: 15px">Light range（照射范围）的 forward 目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → range。</li>
+        <li style="padding-left: 15px">反向播放：range → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -483,7 +476,7 @@
         <span class="title">DoInterpolate</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">Text / TextMeshPro の数値を補間しながらアニメーション表示させるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于在 Text / TextMeshPro 中以插值方式播放数值动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoInterpolate(this Text target, int forwardValue, float duration = 1);</p>
       <p class="content">ITweenPlayer DoInterpolate(this Text target, int forwardValue, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoInterpolate(this Text target, float forwardValue, float duration = 1);</p>
@@ -492,24 +485,24 @@
       <p class="content">ITweenPlayer DoInterpolate(this TMP_Text target, float forwardValue, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoInterpolate(this TMP_Text target, int forwardValue, float duration = 1);</p>
       <p class="content">ITweenPlayer DoInterpolate(this TMP_Text target, int forwardValue, AnimationCurve curve);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる UnityEngine.UI.Text コンポーネント。</li>
+        <li style="padding-left: 15px">要进行动画的 UnityEngine.UI.Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- float/Int forwardValue</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → forwardValue。</li>
-        <li style="padding-left: 15px">逆再生：forwardValue。 → 現在値。</li>
+        <li style="padding-left: 2px">- float/Int forwardValue：</li>
+        <li style="padding-left: 15px">正向播放：当前值 → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -517,7 +510,7 @@
         <span class="title">DoMove / DoMove(X/Y/Z)</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">対象オブジェクトの 移動 をアニメーションさせるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于为目标对象的移动播放动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoMoveX(this GameObject target, float x, float duration = 1);</p>
       <p class="content">ITweenPlayer DoMoveX(this GameObject target, float x, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoMoveY(this GameObject target, float y, float duration = 1);</p>
@@ -534,30 +527,30 @@
       <p class="content">ITweenPlayer DoMoveZ&lt;T&gt;(this T target, float z, AnimationCurve curve) where T : Component;</p>
       <p class="content">ITweenPlayer DoMove&lt;T&gt;(this T target, Vector3 forwardValue, float duration = 1, bool relative = false) where T : Component;</p>
       <p class="content">ITweenPlayer DoMove&lt;T&gt;(this T target, Vector3 forwardValue, AnimationCurve curve, bool relative = false) where T : Component;</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- GameObject target：</li>
-        <li style="padding-left: 15px">アニメーション移動対象となる UnityEngine.GameObject。 Transformを持つオブジェクトを指定できます。</li>
+        <li style="padding-left: 15px">要进行移动动画的 UnityEngine.GameObject。任何具有 Transform 的对象都可以使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- T target：</li>
-        <li style="padding-left: 15px">アニメーション移動対象となるコンポネント。 Transformを持つコンポーネントであれば利用できます。</li>
+        <li style="padding-left: 15px">要进行移动动画的组件。任何具有 Transform 的组件都可以使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Vector3 forwardValue：</li>
-        <li style="padding-left: 15px">アニメーションの 正方向（forward）再生時の到達座標。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → forwardValue に向かって移動します。</li>
-        <li style="padding-left: 15px">逆再生時：forwardValue → 現在値 に向かって移動します。</li>
+        <li style="padding-left: 15px">正向播放时的目标坐标。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">(x/y/z) 座標の forward 到達値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → (x/y/z) に向かって移動します。</li>
-        <li style="padding-left: 15px">逆再生時：(x/y/z) → 現在値 に向かって移動します。</li>
+        <li style="padding-left: 15px">(x/y/z) 坐标的 forward 目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → (x/y/z)。</li>
+        <li style="padding-left: 15px">反向播放：(x/y/z) → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -565,7 +558,7 @@
         <span class="title">DoRotation / DoRotation(X/Y/Z)</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">対象オブジェクトの 回転 をアニメーションさせるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于为目标对象的旋转播放动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoRotationX(this GameObject target, float x, float duration = 1);</p>
       <p class="content">ITweenPlayer DoRotationX(this GameObject target, float x, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoRotationY(this GameObject target, float y, float duration = 1);</p>
@@ -582,30 +575,30 @@
       <p class="content">ITweenPlayer DoRotationZ&lt;T&gt;(this T target, float z, AnimationCurve curve) where T : Component;</p>
       <p class="content">ITweenPlayer DoRotation&lt;T&gt;(this T target, Vector3 forwardValue, float duration = 1, bool relative = false) where T : Component;</p>
       <p class="content">ITweenPlayer DoRotation&lt;T&gt;(this T target, Vector3 forwardValue, AnimationCurve curve, bool relative = false) where T : Component;</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- GameObject target：</li>
-        <li style="padding-left: 15px">アニメーション回転対象となる UnityEngine.GameObject。 Transformを持つオブジェクトを指定できます。</li>
+        <li style="padding-left: 15px">要进行旋转动画的 UnityEngine.GameObject。任何具有 Transform 的对象都可以使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- T target：</li>
-        <li style="padding-left: 15px">アニメーション回転対象となるコンポネント。 Transformを持つコンポーネントであれば利用できます。</li>
+        <li style="padding-left: 15px">要进行旋转动画的组件。任何具有 Transform 的组件都可以使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Vector3 forwardValue：</li>
-        <li style="padding-left: 15px">アニメーションの 正方向（forward）再生時の到達回転角。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → forwardValue に向かって回転します。</li>
-        <li style="padding-left: 15px">逆再生時：forwardValue → 現在値 に向かって回転します。</li>
+        <li style="padding-left: 15px">正向播放时的目标旋转角度。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">(x/y/z) 軸回転の forward 到達角度。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → (x/y/z) に向かって回転します。</li>
-        <li style="padding-left: 15px">逆再生時：(x/y/z) → 現在値 に向かって回転します。</li>
+        <li style="padding-left: 15px">(x/y/z) 轴旋转的 forward 目标角度。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → (x/y/z)。</li>
+        <li style="padding-left: 15px">反向播放：(x/y/z) → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -613,7 +606,7 @@
         <span class="title">DoScale / DoScale(X/Y/Z)</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">対象オブジェクトの 拡大縮小 をアニメーションさせるためのユーティリティメソッドです。</h5>
+      <h5 class="title">用于为目标对象的缩放播放动画的实用方法。</h5>
       <p class="content">ITweenPlayer DoScaleX(this GameObject target, float x, float duration = 1);</p>
       <p class="content">ITweenPlayer DoScaleX(this GameObject target, float x, AnimationCurve curve);</p>
       <p class="content">ITweenPlayer DoScaleY(this GameObject target, float y, float duration = 1);</p>
@@ -630,60 +623,60 @@
       <p class="content">ITweenPlayer DoScaleZ&lt;T&gt;(this T target, float z, AnimationCurve curve) where T : Component;</p>
       <p class="content">ITweenPlayer DoScale&lt;T&gt;(this T target, Vector3 forwardValue, float duration = 1, bool relative = false) where T : Component;</p>
       <p class="content">ITweenPlayer DoScale&lt;T&gt;(this T target, Vector3 forwardValue, AnimationCurve curve, bool relative = false) where T : Component;</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- GameObject target：</li>
-        <li style="padding-left: 15px">アニメーション拡大縮小対象となる UnityEngine.GameObject。 Transformを持つオブジェクトを指定できます。</li>
+        <li style="padding-left: 15px">要进行缩放动画的 UnityEngine.GameObject。任何具有 Transform 的对象都可以使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- T target：</li>
-        <li style="padding-left: 15px">アニメーション拡大縮小対象となるコンポネント。 Transformを持つコンポーネントであれば利用できます。</li>
+        <li style="padding-left: 15px">要进行缩放动画的组件。任何具有 Transform 的组件都可以使用。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Vector3 forwardValue：</li>
-        <li style="padding-left: 15px">アニメーションの 正方向（forward）再生時の到達拡大縮小の値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → forwardValue に向かって拡大縮小します。</li>
-        <li style="padding-left: 15px">逆再生時：forwardValue → 現在値 に向かって拡大縮小します。</li>
+        <li style="padding-left: 15px">正向播放时的目标缩放值。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → forwardValue。</li>
+        <li style="padding-left: 15px">反向播放：forwardValue → 当前值。</li>
         <li >&nbsp</li>
-        <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">(x/y/z) 軸回転の forward 到達角度。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在値 → (x/y/z) に向かって拡大縮小します。</li>
-        <li style="padding-left: 15px">逆再生時：(x/y/z) → 現在値 に向かって拡大縮小します。</li>
+        <li style="padding-left: 2px">- float x：</li>
+        <li style="padding-left: 15px">(x/y/z) 轴缩放的 forward 目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前值 → (x/y/z)。</li>
+        <li style="padding-left: 15px">反向播放：(x/y/z) → 当前值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
- 
+
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
         <span class="title">DoReveal</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">テキストを 1 文字ずつ表示するタイプライター風アニメーションを実行するユーティリティメソッド</h5>
+      <h5 class="title">用于以打字机风格逐字显示文本的实用方法。</h5>
       <p class="content">ITweenPlayer DoReveal(this Text target, string text = null, float duration = 1);</p>
       <p class="content">ITweenPlayer DoReveal(this Text target, AnimationCurve curve, string text = null);</p>
       <p class="content">ITweenPlayer DoReveal(this TMP_Text target, string text = null, float duration = 1);</p>
       <p class="content">ITweenPlayer DoReveal(this TMP_Text target, AnimationCurve curve, string text = null);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる UnityEngine.UI.Text コンポーネント。</li>
+        <li style="padding-left: 15px">要进行动画的 UnityEngine.UI.Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">将在打字机动画中显示的文本内容。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -691,24 +684,24 @@
         <span class="title">DoRichTextReveal</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">リッチテキストに対応したタイプライター風アニメーションを実行するユーティリティメソッド</h5>
+      <h5 class="title">支持富文本的打字机风动画的实用方法</h5>
       <p class="content">IRichTextPlayer DoRichTextReveal(this TMP_Text target, string text = null, float duration = 1);</p>
       <p class="content">IRichTextPlayer DoRichTextReveal(this TMP_Text target, AnimationCurve curve, string text = null);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">将在打字机动画中显示的文本内容。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -716,25 +709,25 @@
         <span class="title">DoRichTextRotateTween</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">リッチテキストに対応し、TextMeshPro の文字に対して回転アニメーションを実行します。</h5>
+      <h5 class="title">支持富文本，并对 TextMeshPro 的字符执行旋转动画。</h5>
       <p class="content">IRichTextPlayer DoRichTextRotateTween(this TMP_Text target, float rotate, string text = null, float duration = 1);</p>
       <p class="content">IRichTextPlayer DoRichTextRotateTween(this TMP_Text target, AnimationCurve curve, float rotate, string text = null);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float rotate：</li>
-        <li style="padding-left: 15px">回転の forward 再生時の到達角度。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：0 → rotate。</li>
-        <li style="padding-left: 15px">逆再生時：rotate → 0。</li>
+        <li style="padding-left: 15px">旋转动画在 forward 播放时的目标角度。</li>
+        <li style="padding-left: 15px">正向播放：0 → rotate。</li>
+        <li style="padding-left: 15px">反向播放：rotate → 0。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -742,25 +735,25 @@
         <span class="title">DoRichTextSizeTween</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro のフォントサイズをアニメーションで変化させる機能です。</h5>
+      <h5 class="title">用于以动画方式改变 TextMeshPro 的字体大小。</h5>
       <p class="content">IRichTextPlayer DoRichTextSizeTween(this TMP_Text target, float fontsize, string text = null, float duration = 1);</p>
       <p class="content">IRichTextPlayer DoRichTextSizeTween(this TMP_Text target, AnimationCurve curve, float fontsize, string text = null);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float fontsize：</li>
-        <li style="padding-left: 15px">フォントサイズの forward 再生時の到達値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在のfontsize → fontsize。</li>
-        <li style="padding-left: 15px">逆再生時：fontsize → 現在のfontsize。</li>
+        <li style="padding-left: 15px">字体大小在 forward 播放时的目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前 fontsize → fontsize。</li>
+        <li style="padding-left: 15px">反向播放：fontsize → 当前 fontsize。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -768,34 +761,34 @@
         <span class="title">DoRichTextTween</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">リッチテキストに対応し、タイプライター風アニメーション •回転 •フォントサイズ変化を同時に実行できる複合テキストアニメーション機能です。</h5>
+      <h5 class="title">支持富文本，可同时执行打字机动画、旋转、字体大小变化的复合文本动画功能。</h5>
       <p class="content">IRichTextPlayer DoRichTextTween(this TMP_Text target, bool reveal = true, string text = null, bool sizetween = false, float fontsize = 0, bool rotatetween = false, float rotate = 0, float duration = 1);</p>
       <p class="content">IRichTextPlayer DoRichTextTween(this TMP_Text target, AnimationCurve curve, bool reveal = true, string text = null, bool sizetween = false, float fontsize = 0, bool rotatetween = false, float rotate = 0);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">将在打字机动画中显示的文本内容。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float fontsize：</li>
-        <li style="padding-left: 15px">フォントサイズの forward 再生時の到達値。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：現在のfontsize → fontsize。</li>
-        <li style="padding-left: 15px">逆再生時：fontsize → 現在のfontsize。</li>
+        <li style="padding-left: 15px">字体大小在 forward 播放时的目标值。</li>
+        <li style="padding-left: 15px">正向播放：当前 fontsize → fontsize。</li>
+        <li style="padding-left: 15px">反向播放：fontsize → 当前 fontsize。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float rotate：</li>
-        <li style="padding-left: 15px">回転の forward 再生時の到達角度。</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：0 → rotate。</li>
-        <li style="padding-left: 15px">逆再生時：rotate → 0。</li>
+        <li style="padding-left: 15px">旋转动画在 forward 播放时的目标角度。</li>
+        <li style="padding-left: 15px">正向播放：0 → rotate。</li>
+        <li style="padding-left: 15px">反向播放：rotate → 0。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -803,46 +796,46 @@
         <span class="title">DoMeshExplodeIn</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点データを直接操作し、各文字を個別に「爆発するように」外側へ飛ばすアニメーションを生成するユーティリティメソッドです。</h5>
+      <h5 class="title">一个直接操作 TextMeshPro 顶点数据的实用方法，用于生成让每个字符独立向外“爆炸”飞散的动画。</h5>
       <p class="content">IExplodeInPlayer DoMeshExplodeIn(this TMP_Text target, string text = null, float explosionPower = 200, bool fadeOut = true, float fadedelay = 0, bool rotate = true, float rotateMin = 50, float rotateMax = 500, bool useFloatiness = true, float factorMin = 0.02F, float factorMax = 0.15F, float duration = 1);</p>
       <p class="content">IExplodeInPlayer DoMeshExplodeIn(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, bool fadeOut = true, float fadedelay = 0, bool rotate = true, float rotateMin = 50, float rotateMax = 500, bool useFloatiness = true, float factorMin = 0.02F, float factorMax = 0.15F);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于打字机动画显示的字符串。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float explosionPower：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時に到達する最大爆発パワー。</li>
+        <li style="padding-left: 15px">正向（forward）播放时达到的最大爆炸力度。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool fadeOut：</li>
-        <li style="padding-left: 15px">フェードアウト演出を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用淡出效果。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float fadedelay：</li>
-        <li style="padding-left: 15px">フェードアウト開始までの遅延時間。</li>
+        <li style="padding-left: 15px">开始淡出前的延迟时间。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool rotate：</li>
-        <li style="padding-left: 15px">文字の回転演出を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否对字符应用旋转效果。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float rotateMin / rotateMax：</li>
-        <li style="padding-left: 15px">回転演出を使用する場合の回転角度範囲。</li>
-        <li style="padding-left: 15px">各文字は rotateMin〜rotateMax のランダムな角度で回転します。</li>
+        <li style="padding-left: 15px">启用旋转效果时的旋转角度范围。</li>
+        <li style="padding-left: 15px">每个字符会以 rotateMin〜rotateMax 的随机角度旋转。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool useFloatiness：</li>
-        <li style="padding-left: 15px">浮遊感（ゆらぎ）演出を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用漂浮（摆动）效果。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float factorMin / factorMax：</li>
-        <li style="padding-left: 15px">浮遊感の強さの範囲。各文字に factorMin〜factorMax のランダムな揺らぎが適用されます。</li>
+        <li style="padding-left: 15px">漂浮强度范围。每个字符会获得 factorMin〜factorMax 的随机摆动值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴直接作为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -850,30 +843,30 @@
         <span class="title">DoMeshExplodeInFadeOut</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点データを直接操作し、各文字を独立したメッシュとして爆発させながらフェードアウトさせるアニメーションを実現するユーティリティメソッドです。</h5>
+      <h5 class="title">一个直接操作 TextMeshPro 顶点数据的实用方法，使字符作为独立网格爆炸飞散并同时淡出。</h5>
       <p class="content">IExplodeInPlayer DoMeshExplodeInFadeOut(this TMP_Text target, string text = null, float explosionPower = 200, float delay = 0, float duration = 1);</p>
       <p class="content">IExplodeInPlayer DoMeshExplodeInFadeOut(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, float delay = 0);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于打字机动画显示的字符串。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float explosionPower：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時に到達する最大爆発パワー。</li>
+        <li style="padding-left: 15px">正向（forward）播放时达到的最大爆炸力度。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float delay：</li>
-        <li style="padding-left: 15px">フェードアウト開始までの遅延時間。</li>
+        <li style="padding-left: 15px">开始淡出前的延迟时间。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴直接作为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -881,68 +874,68 @@
         <span class="title">DoMeshExplodeInFloatinessFadeOut</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点データを直接操作し、文字をふわりと浮遊させながら四方へ飛散させ、同時にフェードアウトさせるアニメーションを実現するユーティリティメソッドです。</h5>
+      <h5 class="title">一个直接操作 TextMeshPro 顶点数据的实用方法，使字符在漂浮摆动的同时向四周飞散，并同步淡出。</h5>
       <p class="content">IExplodeInPlayer DoMeshExplodeInFloatinessFadeOut(this TMP_Text target, string text = null, float explosionPower = 200, float fadedelay = 0, float factorMin = 0.02F, float factorMax = 0.15F, float duration = 1);</p>
       <p class="content">IExplodeInPlayer DoMeshExplodeInFloatinessFadeOut(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, float fadedelay = 0, float factorMin = 0.02F, float factorMax = 0.15F);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于打字机动画显示的字符串。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float explosionPower：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時に到達する最大爆発パワー。</li>
+        <li style="padding-left: 15px">正向（forward）播放时达到的最大爆炸力度。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float fadedelay：</li>
-        <li style="padding-left: 15px">フェードアウト開始までの遅延時間。</li>
+        <li style="padding-left: 15px">开始淡出前的延迟时间。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float factorMin / factorMax：</li>
-        <li style="padding-left: 15px">浮遊感の強さの範囲。各文字に factorMin〜factorMax のランダムな揺らぎが適用されます。</li>
+        <li style="padding-left: 15px">漂浮强度范围。每个字符会获得 factorMin〜factorMax 的随机摆动值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴直接作为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
-
+      
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
         <span class="title">DoMeshExplodeInRotateFadeOut</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点データを直接操作し、文字を個別に回転させながら爆発的に飛散させ、フェードアウトさせるアニメーションを実現するユーティリティメソッドです。</h5>
+      <h5 class="title">一个直接操作 TextMeshPro 顶点数据的实用方法，可让文字在独立旋转的同时爆炸式飞散并淡出。</h5>
       <p class="content">IExplodeInPlayer DoMeshExplodeInRotateFadeOut(this TMP_Text target, string text = null, float explosionPower = 200, float fadedelay = 0, float rotateMin = 50, float rotateMax = 500, float duration = 1);</p>
       <p class="content">IExplodeInPlayer DoMeshExplodeInRotateFadeOut(this TMP_Text target, AnimationCurve curve, string text = null, float explosionPower = 200, float fadedelay = 0, float rotateMin = 50, float rotateMax = 500);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于打字机动画显示的字符串。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float explosionPower：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時に到達する最大爆発パワー。</li>
+        <li style="padding-left: 15px">正向（forward）播放时达到的最大爆炸力度。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float fadedelay：</li>
-        <li style="padding-left: 15px">フェードアウト開始までの遅延時間。</li>
+        <li style="padding-left: 15px">开始淡出前的延迟时间。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float rotateMin / rotateMax：</li>
-        <li style="padding-left: 15px">回転演出を使用する場合の回転角度範囲。</li>
-        <li style="padding-left: 15px">各文字は rotateMin〜rotateMax のランダムな角度で回転します。</li>
+        <li style="padding-left: 15px">启用旋转效果时的旋转角度范围。</li>
+        <li style="padding-left: 15px">每个字符会以 rotateMin〜rotateMax 的随机角度旋转。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴直接作为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -950,48 +943,48 @@
         <span class="title">DoMeshReveal</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点を直接操作し、Fade / Scale / Move / Rotate / Wave / Bounce など複合的な文字演出を実現するアニメーションユーティリティメソッドです。</h5>
+      <h5 class="title">一个直接操作 TextMeshPro 顶点的实用方法，可实现 Fade / Scale / Move / Rotate / Wave / Bounce 等多种复合文字动画效果。</h5>
       <p class="content">IRevealPlayer DoMeshReveal(this TMP_Text target, bool reveal = true, string text = null, bool fadetween = false, float alpha = 1, bool postween = false, Vector3 distance = default, bool scaletween = false, float scale = 1, bool rotatetween = false, Vector3 rotate = default, WaveType wavetype = WaveType.None, float frequency = 0, float duration = 1);</p>
       <p class="content">IRevealPlayer DoMeshReveal(this TMP_Text target, AnimationCurve curve, bool reveal = true, string text = null, bool fadetween = false, float alpha = 1, bool postween = false, Vector3 distance = default, bool scaletween = false, float scale = 1, bool rotatetween = false, Vector3 rotate = default, WaveType wavetype = WaveType.None, float frequency = 0);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool reveal：</li>
-        <li style="padding-left: 15px">タイプライター式の 文字出現アニメーション（Reveal） を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用打字机式的文字出现动画（Reveal）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于打字机动画显示的字符串。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool fadetween：</li>
-        <li style="padding-left: 15px">フェードアニメーションを使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用淡入淡出动画。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float alpha：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：alpha → 1。</li>
-        <li style="padding-left: 15px">逆再生時：1 → alpha。</li>
+        <li style="padding-left: 15px">正向播放：alpha → 1。</li>
+        <li style="padding-left: 15px">反向播放：1 → alpha。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool postween：</li>
-        <li style="padding-left: 15px">移動アニメーションを使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用位移动画。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Vector3 distance：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：distance → Vector3.zero。</li>
-        <li style="padding-left: 15px">逆再生時：Vector3.zero → distance：。</li>
+        <li style="padding-left: 15px">正向播放：distance → Vector3.zero。</li>
+        <li style="padding-left: 15px">反向播放：Vector3.zero → distance。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool scaletween：</li>
-        <li style="padding-left: 15px">スケールアニメーションを使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用缩放动画。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float scale：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：scale → 1。</li>
-        <li style="padding-left: 15px">逆再生時：1 → scale：。</li>
+        <li style="padding-left: 15px">正向播放：scale → 1。</li>
+        <li style="padding-left: 15px">反向播放：1 → scale。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool rotatetween：</li>
-        <li style="padding-left: 15px">回転アニメーションを使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用旋转动画。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Vector3 rotate：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：rotate → Vector3.zero。</li>
-        <li style="padding-left: 15px">逆再生時：Vector3.zero → rotate。</li>
+        <li style="padding-left: 15px">正向播放：rotate → Vector3.zero。</li>
+        <li style="padding-left: 15px">反向播放：Vector3.zero → rotate。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- WaveType wavetype：</li>
         <li style="padding-left: 15px">None</li>
@@ -999,54 +992,54 @@
         <li style="padding-left: 15px">Bounce</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float frequency：</li>
-        <li style="padding-left: 15px">Wavy / Bounce 使用時の周波数値。</li>
+        <li style="padding-left: 15px">Wavy / Bounce 使用时的频率值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴直接作为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
- 
+
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
         <span class="title">DoMeshFadeReveal</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点を直接操作し、Fade + Reveal を中心とした複合的な文字演出を行うユーティリティメソッド。</h5>
+      <h5 class="title">一个直接操作 TextMeshPro 顶点、以 Fade + Reveal 为核心实现复合文字效果的实用方法。</h5>
       <p class="content">IRevealPlayer DoMeshFadeReveal(this TMP_Text target, float alpha = 0, bool reveal = true, string text = null, float duration = 1);</p>
       <p class="content">IRevealPlayer DoMeshFadeReveal(this TMP_Text target, AnimationCurve curve, float alpha = 0, bool reveal = true, string text = null);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool reveal：</li>
-        <li style="padding-left: 15px">タイプライター式の 文字出現アニメーション（Reveal） を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用打字机式的文字出现动画（Reveal）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于打字机动画显示的字符串。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float alpha：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：alpha → 1。</li>
-        <li style="padding-left: 15px">逆再生時：1 → alpha。</li>
+        <li style="padding-left: 15px">正向播放：alpha → 1。</li>
+        <li style="padding-left: 15px">反向播放：1 → alpha。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">由于曲线的时间轴直接作为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
- 
+
       <div class="accordion">
         <h4 class="title"><span class="arrow">▶</span>
         <span class="title">DoMeshMoveReveal / DoMeshMove(X/Y/Z)Reveal</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点を直接操作し、Move（移動）+ Reveal を中心に Wave / Bounce などの動きを組み合わせたアニメーションを実現するユーティリティメソッド。</h5>
+      <h5 class="title">用于直接操作 TextMeshPro 顶点的实用方法，可实现以 Move（位移）+ Reveal 为核心，并可组合 Wave / Bounce 等效果的动画。</h5>
       <p class="content">IRevealPlayer DoMeshMoveReveal(this TMP_Text target, Vector3 distance, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null, float duration = 1);</p>
       <p class="content">IRevealPlayer DoMeshMoveReveal(this TMP_Text target, Vector3 distance, AnimationCurve curve, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null);</p>
       <p class="content">IRevealPlayer DoMeshMoveXReveal(this TMP_Text target, float x, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null, float duration = 1);</p>
@@ -1055,25 +1048,25 @@
       <p class="content">IRevealPlayer DoMeshMoveYReveal(this TMP_Text target, float y, AnimationCurve curve, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null);</p>
       <p class="content">IRevealPlayer DoMeshMoveZReveal(this TMP_Text target, float z, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null, float duration = 1);</p>
       <p class="content">IRevealPlayer DoMeshMoveZReveal(this TMP_Text target, float z, AnimationCurve curve, WaveType wavetype = WaveType.None, float frequency = 0, bool reveal = true, string text = null);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool reveal：</li>
-        <li style="padding-left: 15px">タイプライター式の 文字出現アニメーション（Reveal） を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用打字机式的字符显示动画（Reveal）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于 Reveal 动画显示的文本内容。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Vector3 distance：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：distance → Vector3.zero。</li>
-        <li style="padding-left: 15px">逆再生時：Vector3.zero → distance：。</li>
+        <li style="padding-left: 15px">正向播放：distance → Vector3.zero。</li>
+        <li style="padding-left: 15px">反向播放：Vector3.zero → distance。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：(x/y/z) → 0。</li>
-        <li style="padding-left: 15px">逆再生時：0 → (x/y/z)：。</li>
+        <li style="padding-left: 15px">正向播放：(x/y/z) → 0。</li>
+        <li style="padding-left: 15px">反向播放：0 → (x/y/z)。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- WaveType wavetype：</li>
         <li style="padding-left: 15px">None</li>
@@ -1081,14 +1074,14 @@
         <li style="padding-left: 15px">Bounce</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float frequency：</li>
-        <li style="padding-left: 15px">Wavy / Bounce 使用時の周波数値。</li>
+        <li style="padding-left: 15px">使用 Wavy / Bounce 时的频率值。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -1096,7 +1089,7 @@
         <span class="title">DoMeshRotateReveal / DoMeshRotate(X/Y/Z)Reveal</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点を直接操作し、Rotate（回転）+ Reveal を中心としたアニメーションを実現するユーティリティメソッド。</h5>
+      <h5 class="title">用于直接操作 TextMeshPro 顶点的实用方法，可实现以 Rotate（旋转）+ Reveal 为核心的动画。</h5>
       <p class="content">IRevealPlayer DoMeshRotateReveal(this TMP_Text target, Vector3 rotate, bool reveal = true, string text = null, float duration = 1);</p>
       <p class="content">IRevealPlayer DoMeshRotateReveal(this TMP_Text target, Vector3 rotate, AnimationCurve curve, bool reveal = true, string text = null);</p>
       <p class="content">IRevealPlayer DoMeshRotateXReveal(this TMP_Text target, float x, bool reveal = true, string text = null, float duration = 1);</p>
@@ -1105,32 +1098,32 @@
       <p class="content">IRevealPlayer DoMeshRotateYReveal(this TMP_Text target, float y, bool reveal = true, string text = null, float duration = 1);</p>
       <p class="content">IRevealPlayer DoMeshRotateZReveal(this TMP_Text target, float z, bool reveal = true, string text = null, float duration = 1);</p>
       <p class="content">IRevealPlayer DoMeshRotateZReveal(this TMP_Text target, float z, AnimationCurve curve, bool reveal = true, string text = null);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool reveal：</li>
-        <li style="padding-left: 15px">タイプライター式の 文字出現アニメーション（Reveal） を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用打字机式的字符显示动画（Reveal）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于 Reveal 动画显示的文本内容。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- Vector3 rotate：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：rotate → Vector3.zero。</li>
-        <li style="padding-left: 15px">逆再生時：Vector3.zero → rotate。</li>
+        <li style="padding-left: 15px">正向播放：rotate → Vector3.zero。</li>
+        <li style="padding-left: 15px">反向播放：Vector3.zero → rotate。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float x / y / z：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：(x/y/z) → 0。</li>
-        <li style="padding-left: 15px">逆再生時：0 → (x/y/z)：。</li>
+        <li style="padding-left: 15px">正向播放：(x/y/z) → 0。</li>
+        <li style="padding-left: 15px">反向播放：0 → (x/y/z)。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -1138,31 +1131,31 @@
         <span class="title">DoMeshScaleReveal</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">TextMeshPro の頂点を直接操作し、Scale（拡大縮小）+ Reveal を中心としたアニメーションを実現するユーティリティメソッド。</h5>
+      <h5 class="title">用于直接操作 TextMeshPro 顶点的实用方法，可实现以 Scale（缩放）+ Reveal 为核心的动画。</h5>
       <p class="content">IRevealPlayer DoMeshScaleReveal(this TMP_Text target, AnimationCurve curve, float scale = 0, bool reveal = true, string text = null);</p>
       <p class="content">IRevealPlayer DoMeshScaleReveal(this TMP_Text target, float scale = 0, bool reveal = true, string text = null, float duration = 1);</p>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- TMP_Text target：</li>
-        <li style="padding-left: 15px">アニメーション対象となる TMPPro.TMP_Textコンポネント。</li>
+        <li style="padding-left: 15px">要进行动画处理的 TMPPro.TMP_Text 组件。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- bool reveal：</li>
-        <li style="padding-left: 15px">タイプライター式の 文字出現アニメーション（Reveal） を使用するかどうか。</li>
+        <li style="padding-left: 15px">是否使用打字机式的字符显示动画（Reveal）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- string text：</li>
-        <li style="padding-left: 15px">既存テキストに追加するテキストです。</li>
-        <li style="padding-left: 15px">タイプライターアニメーションで 表示する文字列。</li>
+        <li style="padding-left: 15px">要追加到现有文本的字符串。</li>
+        <li style="padding-left: 15px">用于 Reveal 动画显示的文本内容。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float scale：</li>
-        <li style="padding-left: 15px">正方向（forward）再生時：scale → 1。</li>
-        <li style="padding-left: 15px">逆再生時：1 → scale：。</li>
+        <li style="padding-left: 15px">正向播放：scale → 1。</li>
+        <li style="padding-left: 15px">反向播放：1 → scale。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- float duration：</li>
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）。</li>
+        <li style="padding-left: 15px">动画持续时间（秒）。</li>
         <li >&nbsp</li>
         <li style="padding-left: 2px">- AnimationCurve curve：</li>
-        <li style="padding-left: 15px">アニメーションの進行に使用するカスタムカーブ。</li>
-        <li style="padding-left: 15px">カーブの時間軸がそのままアニメーション時間になるため、duration は無効化されます。</li>
+        <li style="padding-left: 15px">用于控制动画进度的自定义曲线。</li>
+        <li style="padding-left: 15px">曲线的时间轴即为动画时长，因此 duration 将被忽略。</li>
       </ul></div>
 
       <div class="accordion">
@@ -1170,50 +1163,50 @@
         <span class="title">Path Settings</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">複数のポイントで構成されたカーブ（パス）に沿って対象オブジェクトを移動させるアニメーション機能です。</h5>
+      <h5 class="title">用于沿由多个点组成的曲线（路径）移动对象的动画功能。</h5>
       <p class="content">IPathPlayer SetClosed(bool closed); </p>
       <ul class="content">
-        <li style="padding-left: 15px">曲線の開始点と終端を接続するかどうかを設定します。</li>
+        <li style="padding-left: 15px">设置是否将路径的起点和终点连接。</li>
       </ul>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- bool closed：</li>
-        <li style="padding-left: 15px">true：曲線開始点と曲線終端を接続し、ループ状の閉じた曲線として扱います。</li>
-        <li style="padding-left: 15px">false：曲線を接続せず、開いた曲線として扱います。</li>
+        <li style="padding-left: 15px">true：闭合曲线</li>
+        <li style="padding-left: 15px">false：开放曲线</li>
       </ul>
       <p class="content">IPathPlayer SetLookMode(PathLookMode lookmode);</p>
       <ul class="content">
-        <li style="padding-left: 15px">移動中のオブジェクトがどの方向を向くかを設定します。</li>
+        <li style="padding-left: 15px">设置对象在移动过程中的朝向。</li>
       </ul>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- PathLookMode lookmode：</li>
-        <li style="padding-left: 15px">None：向きを変更しません。オブジェクトの現在の回転を維持します。</li>
-        <li style="padding-left: 15px">Forward：パスの進行方向（接線方向）を向きます。一般的な「パスに沿って進む」動作。</li>
-        <li style="padding-left: 15px">Right：パスの進行方向に対して 右方向（+X 軸側） を向きます。横向き移動などに使用。</li>
-        <li style="padding-left: 15px">Left：パスの進行方向に対して 左方向（–X 軸側） を向きます。Right の反対方向。</li>
+        <li style="padding-left: 15px">None：保持当前旋转</li>
+        <li style="padding-left: 15px">Forward：面向路径切线方向</li>
+        <li style="padding-left: 15px">Right：面向路径方向的右侧（+X）</li>
+        <li style="padding-left: 15px">Left：面向路径方向的左侧（–X）</li>
       </ul>
       <p class="content">IPathPlayer SetPoints(List<Vector3> vectors);</p>
       <ul class="content">
-        <li style="padding-left: 15px">パスを構成する接続点（制御点）リストを設定します。</li>
+        <li style="padding-left: 15px">设置路径的控制点列表。</li>
       </ul>
       <p class="content">IPathPlayer SetTarget(Transform target);</p>
       <ul class="content">
-        <li style="padding-left: 15px">パスに沿って移動させる対象オブジェクト（Transform）を設定します。</li>
+        <li style="padding-left: 15px">设置沿路径移动的目标对象。</li>
       </ul>
       <p class="content">IPathPlayer SetUseLocalPosition(bool uselocal);</p>
       <ul class="content">
-        <li style="padding-left: 15px">パス移動時に ローカル座標 を使用するかどうかを設定します。</li>
+        <li style="padding-left: 15px">设置是否使用本地坐标。</li>
       </ul>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- bool uselocal：</li>
-        <li style="padding-left: 15px">true：ローカル座標を使用します。</li>
-        <li style="padding-left: 15px">false：ワールド座標を使用します。</li>
+        <li style="padding-left: 15px">true：使用本地坐标</li>
+        <li style="padding-left: 15px">false：使用世界坐标</li>
       </ul>
       <p class="content">IPathPlayer SnapTargetToFirstPoint();</p>
       <ul class="content">
-        <li style="padding-left: 15px">ターゲット位置を開始点にリセットします。</li>
+        <li style="padding-left: 15px">将目标对象重置到路径的第一个点。</li>
       </ul></div>
 
       <div class="accordion">
@@ -1221,72 +1214,53 @@
         <span class="title">CurveTween Settings</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">CurveTween の挙動を制御するための設定項目です。</h5>
       <p class="content">iTweenPlayer SetDelay(float delay);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーション開始までの待ち時間を設定します。</li>
+        <li style="padding-left: 15px">设置动画开始前的延迟时间。</li>
       </ul>
       <p class="content">iTweenPlayer SetDuration(float duration);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーションにかける時間（秒）を設定します。</li>
+        <li style="padding-left: 15px">设置动画持续时间（秒）。</li>
       </ul>
       <p class="content">iTweenPlayer SetEase(EaseType easeType);</p>
       <ul class="content">
-        <li style="padding-left: 15px">EaseType に応じた 0〜1 の正規化カーブを設定します。（例：Linear、EaseInSine、EaseOutSine、EaseInOutSine など）</li>
+        <li style="padding-left: 15px">根据 EaseType 设置 0–1 的标准化缓动曲线。</li>
       </ul>
       <p class="content">iTweenPlayer SetLoop(bool loop);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーションをループさせるかどうかを設定します。</li>
-      </ul>
-      <h5 class="title">• パラメータ</h5>
-      <ul class="content">
-        <li style="padding-left: 2px">- bool loop：</li>
-        <li style="padding-left: 15px">true：ループする。</li>
-        <li style="padding-left: 15px">false：ループしない。</li>
+        <li style="padding-left: 15px">设置动画是否循环。</li>
       </ul>
       <p class="content">iTweenPlayer SetLoopCount(int loopCount);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーションを繰り返す回数を設定します。</li>
+        <li style="padding-left: 15px">设置动画重复次数。</li>
       </ul>
-      <p class="content">iTweenPlayer SetLoopDelay(bool loopDelay);</p>
+      <p class="content">ITweenPlayerSetLoopDelay(bool loopDelay);</p>
       <ul class="content">
-        <li style="padding-left: 15px">ループ時に delay を使用するかどうかを設定します。</li>
-      </ul>
-      <h5 class="title">• パラメータ</h5>
-      <ul class="content">
-        <li style="padding-left: 2px">- bool loopDelay：</li>
-        <li style="padding-left: 15px">true：ループ時に delayを使用する。</li>
-        <li style="padding-left: 15px">false：開始の時一回のみ使用する。</li>
+        <li style="padding-left: 15px">设置循环时是否应用 delay。</li>
       </ul>
       <p class="content">iTweenPlayer SetLoopType(LoopType loopType);</p>
       <ul class="content">
-        <li style="padding-left: 15px">ループの種類を設定します。</li>
+        <li style="padding-left: 15px">设置循环类型</li>
       </ul>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- LoopType loopType：</li>
-        <li style="padding-left: 15px">Resart：0 → 1 を繰り返します。</li>
-        <li style="padding-left: 15px">YoYo：0 → 1 → 0 を繰り返します。</li>
-        <li style="padding-left: 15px">Increment：既存の値に加算していきます。</li>
+        <li style="padding-left: 15px">Resart：0 → 1 重复</li>
+        <li style="padding-left: 15px">YoYo：0 → 1 → 0 重复</li>
+        <li style="padding-left: 15px">Increment：在现有值基础上累加</li>
       </ul>
       <p class="content">iTweenPlayer SetScaledTime(bool scaledtime);</p>
       <ul class="content">
-        <li style="padding-left: 15px">Time.timeScaleに依存するかどうかを設定します。デフォルトでは、依存します。</li>
-      </ul>
-      <h5 class="title">• パラメータ</h5>
-      <ul class="content">
-        <li style="padding-left: 2px">- bool scaledtime：</li>
-        <li style="padding-left: 15px">true：Time.timeScaleに依存します。</li>
-        <li style="padding-left: 15px">false：依存しない。</li>
+        <li style="padding-left: 15px">设置是否依赖 Time.timeScale。</li>
       </ul>
       <p class="content">iTweenPlayer SetYoYoDelay(float yoYoDelay);</p>
       <ul class="content">
-        <li style="padding-left: 15px">LoopType.YoYo時に使います。0 → 1 に到達した後、この遅延を挟んでから 1 → 0 を実行します。</li>
+        <li style="padding-left: 15px">YoYo 模式下，0 → 1 到达后反向前的延迟。</li>
       </ul>
       <p class="content">iTweenPlayer SetValue(object value);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーション開始前に、ターゲットまたは forwardValue をリセットします。</li>
-        <li style="padding-left: 15px">CanvasGroup / Graphic / Material / Transform / Text / TMP_Text / Vector3 / String / float など</li>
+        <li style="padding-left: 15px">在动画开始前重置目标或 forwardValue。</li>
+        <li style="padding-left: 15px">支持：CanvasGroup / Graphic / Material / Transform / Text / TMP_Text / Vector3 / String / float 等</li>
       </ul></div>
 
       <div class="accordion">
@@ -1294,43 +1268,41 @@
         <span class="title">Play / Stop</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">アニメーションの開始 • 停止を制御します。</h5>
       <p class="content">void Play();</p>
       <p class="content">void Play(bool reversePlay);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーションを再生します。</li>
+        <li style="padding-left: 15px">播放动画。</li>
       </ul>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- bool reversePlay：</li>
-        <li style="padding-left: 15px">true：逆再生します。</li>
-        <li style="padding-left: 15px">false：通常再生します。</li>
+        <li style="padding-left: 15px">reversePlay = true：反向播放</li>
       </ul>
       <p class="content">void PlayOnce();</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーションを 1 回だけ再生し、終了後に解放します。 ただし、ループ設定が有効な場合は解放しません。</li>
+        <li style="padding-left: 15px">播放一次并在结束后释放（循环模式除外）。</li>
       </ul>
       <p class="content">void PlayReverseOnce();</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーションを逆方向に 1 回だけ再生し、終了後に解放します。 ただし、ループ設定が有効な場合は解放しません。</li>
+        <li style="padding-left: 15px">反向播放一次并在结束后释放（循环模式除外）。</li>
       </ul>
       <p class="content">void Stop();</p>
       <ul class="content">
-        <li style="padding-left: 15px">再生中または逆再生中のアニメーションを停止します。</li>
+        <li style="padding-left: 15px">停止当前动画。</li>
       </ul>
       <p class="content">void ForceEnd(bool invokeCallback);</p>
       <ul class="content">
-        <li style="padding-left: 15px">ForceEnd は、通常の終了フローを無視して即座に処理を終わらせるためのメソッド。</li>
+        <li style="padding-left: 15px">ForceEnd 方法用于跳过正常的结束流程，立即终止处理。</li>
       </ul>
-      <h5 class="title">• パラメータ</h5>
+      <h5 class="title">• 参数</h5>
       <ul class="content">
         <li style="padding-left: 2px">- bool invokeCallback：</li>
-        <li style="padding-left: 15px">true：強制終了後に 完了コールバックを実行する。</li>
-        <li style="padding-left: 15px">false：完了コールバックを実行しない。</li>
+        <li style="padding-left: 15px">true：强制结束后执行完成回调。</li>
+        <li style="padding-left: 15px">false：不执行完成回调。</li>
       </ul>
       <p class="content">void StopAndReset();</p>
       <ul class="content">
-        <li style="padding-left: 15px">再生中または逆再生中のアニメーションを停止し、初期状態にリセットします。</li>
+        <li style="padding-left: 15px">停止动画并重置到初始状态。</li>
       </ul></div>
 
       <div class="accordion">
@@ -1338,18 +1310,17 @@
         <span class="title">Event Callbacks</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">アニメーションの開始 • 進行 • 完了時に呼ばれるイベントを登録します。</h5>
       <p class="content">iTweenPlayer AddOnStartListener(UnityAction call);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーション開始時に呼ばれるイベントを登録します。</li>
+        <li style="padding-left: 15px">动画开始时调用。</li>
       </ul>
       <p class="content">iTweenPlayer AddOnYoYoListener(UnityAction call);</p>
       <ul class="content">
-        <li style="padding-left: 15px">YoYo アニメーションで 0 → 1 に到達したタイミングで実行されるイベントを登録します。</li>
+        <li style="padding-left: 15px">YoYo 动画到达 1.0 时调用。</li>
       </ul>
       <p class="content">iTweenPlayer AddOnCompleteListener(UnityAction call);</p>
       <ul class="content">
-        <li style="padding-left: 15px">アニメーションが終了したときに呼ばれるイベントを登録します。 ただし、ループ設定が有効な場合は実行しません。</li>
+        <li style="padding-left: 15px">动画完成时调用（非循环模式）。</li>
       </ul></div>
 
       <div class="accordion">
@@ -1357,7 +1328,7 @@
         <span class="title">GetAnimationCurve</span></h4>
       </div>
       <div class="panel">
-      <h5 class="title">指定した EaseType に基づいて、アニメーションカーブ（Keyframe 配列）を生成して返します。EaseType の補間特性（Linear、EaseInSine、EaseOutSine、EaseInOutSine など）に応じた0〜1 の正規化カーブを構築し、Tween の補間処理に利用できます。</h5>
+      <h5 class="title">根据 EaseType 生成对应的动画曲线（Keyframe 数组），用于 Tween 插值处理。</h5>
       <p class="content">Keyframe[] CurveTweenUtility.GetAnimationCurve(EaseType easeType);</p></div>
     </div>
 
